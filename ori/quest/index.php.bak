@@ -1,0 +1,161 @@
+<?php
+include('secure.php');
+if(is_login())$_SESSION['loginuid']='logout';
+if(isset($_POST['action'])){
+	include('conn.php');
+	include('getip.php');
+	$ID = isset($_POST['id'])? $_POST['id'] : '0';
+	switch($_POST['action']){
+		case 'query_college_list':
+			$insertSQL = sprintf("SELECT id,name FROM college");
+			$result = mysql_query($insertSQL,$sql_db) or die(mysql_error());	
+			$out = array();
+			$i=0;
+			while ($arr = mysql_fetch_assoc($result)){$out[$i++]=$arr;}
+			echo json_encode(array('success' => true , 'data' => $out));
+			exit;
+		case 'query_depart_list':
+			$insertSQL = sprintf("SELECT id,name FROM depart WHERE college_id = %s",
+								 GetSqlValueString($ID,'long'));
+			$result = mysql_query($insertSQL,$sql_db) or die(mysql_error());	
+			$out = array();
+			$i=0;
+			while ($arr = mysql_fetch_assoc($result)){$out[$i++]=$arr;}
+			echo json_encode(array('success' => true , 'data' => $out));
+			exit;
+		case 'query_ident_list':
+			$insertSQL = sprintf("SELECT id,name FROM ident ",
+								 GetSqlValueString($ID,'long'));
+			$result = mysql_query($insertSQL,$sql_db) or die(mysql_error());	
+			$out = array();
+			$i=0;
+			while ($arr = mysql_fetch_assoc($result)){$out[$i++]=$arr;}
+			echo json_encode(array('success' => true , 'data' => $out));
+			exit;
+		case 'query_user':
+			$insertSQL = sprintf("SELECT id,name,ident_id,depart_id,email,phone FROM user WHERE sId =  %s",
+								 GetSqlValueString($_POST['sid'],'text'));
+			$result = mysql_query($insertSQL,$sql_db) or die(mysql_error());	
+			if(!($arr = mysql_fetch_assoc($result))){
+				$insertSQL = sprintf("INSERT INTO user (name,sId,ident_id,depart_id,email,phone,RP,ipstamp) VALUES (%s,%s,%s,%s,%s,%s,%s,%s)",
+									 GetSqlValueString(htmlspecialchars($_POST['name']),'text'),
+									 GetSqlValueString(htmlspecialchars($_POST['sid']),'text'),
+									 GetSqlValueString($_POST['ide_id'],'long'),
+									 GetSqlValueString($_POST['dep_id'],'long'),
+									 GetSqlValueString(htmlspecialchars($_POST['eml']),'text'),
+									 GetSqlValueString(htmlspecialchars($_POST['phone']),'text'),
+									 GetSqlValueString(crc32($_POST['sid'].md5(rand().time())),'text'),
+									 GetSqlValueString(htmlspecialchars(get_real_ip()),'text')
+									 );
+				mysql_query($insertSQL,$sql_db) or die(mysql_error());		
+				$_SESSION['loginuid'] = mysql_insert_id();
+				echo json_encode(array('success' => true , 'data' => 'newuser'));
+				exit;
+			}
+			if(	$_POST['name'] != $arr['name'] ||
+				$_POST['ide_id'] != $arr['ident_id'] ||	
+				$_POST['dep_id'] != $arr['depart_id'] ||
+				$_POST['eml'] != $arr['email'] ||	
+				$_POST['phone'] != $arr['phone'] 
+			 ){
+				echo json_encode(array('success' => false,'err'=>'data incorrect'));
+				exit;
+			}
+			$_SESSION['loginuid'] = $arr['id'] ;
+			echo json_encode(array('success' => true , 'data' => $arr));
+			exit;
+	}
+}
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>問卷調查</title>
+<script type="text/javascript" src='jquery-1.4.2.js'></script>
+<script type="text/javascript" src='index.js'></script>
+
+<style type="text/css">
+<!--
+.style4 {
+	font-size: 10.5px;
+	margin-top: 5px;	
+}
+-->
+</style>
+</head>
+
+<body>
+<form>
+    <div align="center">
+    <table width="746" border="0" cellpadding="7" cellspacing="0" background="img/bg.gif" height="874">
+      <tr>
+        <td height="38" width="23" background="img/lefttop.gif"></td>
+        <td height="38" colspan="2" width="661" background="img/top.gif">&nbsp;</td>
+        <td width="20" height="38" background="img/righttop.gif">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="800" width="23" rowspan="9" background="img/left.jpg">&nbsp;</td>
+        <td height="421" colspan="2" width="661">
+		<p align="center">
+		<img border="0" src="img/title1.gif" width="602" height="262"></p>
+		<p align="center">
+		<img border="0" src="img/slo.gif" width="631" height="113"></td>
+        <td width="20" height="800" rowspan="9" background="img/right.jpg">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="41" align="right">身分</td>
+        <td width="410" height="41" align="left">
+        	<select id="status" name="status">
+	            <option value="">請選擇您的身分</option>
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td width="237" height="49" align="right">姓名</td>
+        <td width="410" height="49" align="left"><label>
+          <input type="text" id="name" size="20" style="width:180px; height:20px;" />
+        </label></td>
+      </tr>
+      <tr>
+        <td width="237" height="54" valign="top" align="right">證號</td>
+        <td width="410" height="54" align="left" valign="top">
+          <input type="text" id="sId" size="14" style="width:180px; height:20px;" /><br />
+          <div class="style4"><font size="2">(學生請填學號，教職員請填身分證字號)</font></div>
+        </td>
+      </tr>
+      <tr>
+        <td width="237" height="50" align="right">學院</td>
+        <td width="410" height="50" align="left">
+        	<select name="college" id="college" ></select></td>
+      </tr>
+      <tr>
+        <td width="237" height="46" align="right">系所</td>
+        <td width="410" height="46" align="left"><select id="department" style="display:none;" ></select> </td>
+      </tr>
+      <tr>
+        <td width="237" height="51" align="right">Email</td>
+        <td width="410" height="51" align="left"><input type="text" id="email" size="25" style="width:180px; height:20px;" /></td>
+      </tr>
+      <tr>
+        <td width="237" height="48" align="right">連絡電話</td>
+        <td width="410" height="48" align="left"><input type="text" id="phone" size="14" style="width:180px; height:20px;" /><font size="2"> 
+		(※ 僅作為得獎通知使用)</font></td>
+      </tr>
+
+      <tr>
+        <td height="40" colspan="2" align="center"><label>
+          <input type="button" id="btn_start" value="開始填答"/>
+        </label></td>
+      </tr>
+      <tr>
+        <td width="23" height="36" background="img/leftbot.gif">&nbsp;</td>
+        <td height="36" colspan="2" align="center" background="img/bot.gif">&nbsp;</td>
+        <td width="20" height="36" background="img/rightbot.gif">&nbsp;</td>
+      </tr>
+    </table>
+	</div>
+</form>
+</body>
+</html>

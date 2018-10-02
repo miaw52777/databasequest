@@ -1,0 +1,2 @@
+ALTER TABLE  `problem` ADD  `sub_title` VARCHAR( 1000 ) NOT NULL ;
+Problem ¼W¥[¤@¦C  

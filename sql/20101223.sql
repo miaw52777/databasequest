@@ -1,0 +1,910 @@
+-- phpMyAdmin SQL Dump
+-- version 2.6.4-pl1
+-- http://www.phpmyadmin.net
+-- 
+-- 主機: localhost
+-- 建立日期: Dec 23, 2011, 02:15 PM
+-- 伺服器版本: 5.0.77
+-- PHP 版本: 5.2.10
+-- 
+-- 資料庫: `databasequest`
+-- 
+
+-- --------------------------------------------------------
+
+-- 
+-- 資料表格式： `admin`
+-- 
+
+CREATE TABLE `admin` (
+  `user` varchar(20) NOT NULL,
+  `pass` varchar(20) NOT NULL,
+  PRIMARY KEY  (`user`)
+) ENGINE=MyISAM DEFAULT CHARSET=big5;
+
+-- 
+-- 列出以下資料庫的數據： `admin`
+-- 
+
+INSERT INTO `admin` VALUES ('admin', '1234');
+
+-- --------------------------------------------------------
+
+-- 
+-- 資料表格式： `adminvisitlog`
+-- 
+
+CREATE TABLE `adminvisitlog` (
+  `id` int(11) NOT NULL auto_increment,
+  `ipstamp` varchar(20) NOT NULL,
+  `timestamp` timestamp NOT NULL default CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=1489 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1489 ;
+
+-- 
+-- 列出以下資料庫的數據： `adminvisitlog`
+-- 
+
+INSERT INTO `adminvisitlog` VALUES (1130, '140.117.169.186', '2011-11-30 15:23:06');
+INSERT INTO `adminvisitlog` VALUES (1131, '140.117.169.186', '2011-11-30 15:54:30');
+INSERT INTO `adminvisitlog` VALUES (1132, '140.117.169.186', '2011-11-30 15:54:32');
+INSERT INTO `adminvisitlog` VALUES (1133, '140.117.169.186', '2011-11-30 15:54:32');
+INSERT INTO `adminvisitlog` VALUES (1134, '140.117.169.186', '2011-11-30 15:54:33');
+INSERT INTO `adminvisitlog` VALUES (1135, '140.117.169.186', '2011-11-30 15:54:33');
+INSERT INTO `adminvisitlog` VALUES (1136, '140.117.169.186', '2011-11-30 15:54:35');
+INSERT INTO `adminvisitlog` VALUES (1137, '140.117.169.186', '2011-11-30 18:00:12');
+INSERT INTO `adminvisitlog` VALUES (1138, '140.117.169.186', '2011-11-30 18:00:12');
+INSERT INTO `adminvisitlog` VALUES (1139, '140.117.188.158', '2011-12-10 09:49:21');
+INSERT INTO `adminvisitlog` VALUES (1140, '140.117.188.158', '2011-12-10 09:49:21');
+INSERT INTO `adminvisitlog` VALUES (1141, '140.117.188.158', '2011-12-10 09:49:37');
+INSERT INTO `adminvisitlog` VALUES (1142, '140.117.188.158', '2011-12-10 09:49:37');
+INSERT INTO `adminvisitlog` VALUES (1143, '140.117.188.158', '2011-12-10 09:49:41');
+INSERT INTO `adminvisitlog` VALUES (1144, '140.117.188.158', '2011-12-10 09:49:41');
+INSERT INTO `adminvisitlog` VALUES (1145, '140.117.188.158', '2011-12-10 09:49:41');
+INSERT INTO `adminvisitlog` VALUES (1146, '140.117.188.158', '2011-12-10 09:49:42');
+INSERT INTO `adminvisitlog` VALUES (1147, '140.117.188.158', '2011-12-10 09:49:42');
+INSERT INTO `adminvisitlog` VALUES (1148, '140.117.188.158', '2011-12-10 09:52:04');
+INSERT INTO `adminvisitlog` VALUES (1149, '140.117.188.158', '2011-12-10 09:52:21');
+INSERT INTO `adminvisitlog` VALUES (1150, '140.117.188.158', '2011-12-10 09:52:21');
+INSERT INTO `adminvisitlog` VALUES (1151, '140.117.188.158', '2011-12-10 09:53:30');
+INSERT INTO `adminvisitlog` VALUES (1152, '140.117.188.158', '2011-12-10 10:46:55');
+INSERT INTO `adminvisitlog` VALUES (1153, '140.117.188.158', '2011-12-10 10:46:55');
+INSERT INTO `adminvisitlog` VALUES (1154, '140.117.188.158', '2011-12-10 10:47:44');
+INSERT INTO `adminvisitlog` VALUES (1155, '140.117.188.158', '2011-12-10 10:47:45');
+INSERT INTO `adminvisitlog` VALUES (1156, '140.117.188.158', '2011-12-10 10:47:45');
+INSERT INTO `adminvisitlog` VALUES (1157, '140.117.188.158', '2011-12-10 10:47:45');
+INSERT INTO `adminvisitlog` VALUES (1158, '140.117.188.158', '2011-12-10 10:47:45');
+INSERT INTO `adminvisitlog` VALUES (1159, '140.117.188.158', '2011-12-10 10:47:47');
+INSERT INTO `adminvisitlog` VALUES (1160, '140.117.188.158', '2011-12-10 10:47:47');
+INSERT INTO `adminvisitlog` VALUES (1161, '140.117.188.158', '2011-12-10 10:47:47');
+INSERT INTO `adminvisitlog` VALUES (1162, '140.117.188.158', '2011-12-10 10:47:47');
+INSERT INTO `adminvisitlog` VALUES (1163, '140.117.188.158', '2011-12-10 10:47:47');
+INSERT INTO `adminvisitlog` VALUES (1164, '140.117.188.158', '2011-12-10 10:47:47');
+INSERT INTO `adminvisitlog` VALUES (1165, '140.117.188.158', '2011-12-10 10:47:48');
+INSERT INTO `adminvisitlog` VALUES (1166, '140.117.188.158', '2011-12-10 10:47:48');
+INSERT INTO `adminvisitlog` VALUES (1167, '140.117.188.158', '2011-12-10 10:47:58');
+INSERT INTO `adminvisitlog` VALUES (1168, '140.117.188.158', '2011-12-10 10:48:09');
+INSERT INTO `adminvisitlog` VALUES (1169, '140.117.188.158', '2011-12-10 10:48:09');
+INSERT INTO `adminvisitlog` VALUES (1170, '140.117.188.158', '2011-12-10 10:50:12');
+INSERT INTO `adminvisitlog` VALUES (1171, '140.117.188.158', '2011-12-10 10:51:03');
+INSERT INTO `adminvisitlog` VALUES (1172, '140.117.188.158', '2011-12-10 10:53:17');
+INSERT INTO `adminvisitlog` VALUES (1173, '140.117.188.158', '2011-12-10 11:14:59');
+INSERT INTO `adminvisitlog` VALUES (1174, '140.117.188.158', '2011-12-10 11:27:59');
+INSERT INTO `adminvisitlog` VALUES (1175, '140.117.188.158', '2011-12-10 11:27:59');
+INSERT INTO `adminvisitlog` VALUES (1176, '140.117.188.158', '2011-12-10 11:28:05');
+INSERT INTO `adminvisitlog` VALUES (1177, '140.117.188.158', '2011-12-10 11:35:03');
+INSERT INTO `adminvisitlog` VALUES (1178, '140.117.188.158', '2011-12-10 11:35:05');
+INSERT INTO `adminvisitlog` VALUES (1179, '140.117.188.158', '2011-12-10 11:42:58');
+INSERT INTO `adminvisitlog` VALUES (1180, '140.117.188.158', '2011-12-10 11:44:04');
+INSERT INTO `adminvisitlog` VALUES (1181, '140.117.188.158', '2011-12-10 11:48:22');
+INSERT INTO `adminvisitlog` VALUES (1182, '140.117.188.158', '2011-12-10 13:03:08');
+INSERT INTO `adminvisitlog` VALUES (1183, '140.117.188.158', '2011-12-10 13:08:39');
+INSERT INTO `adminvisitlog` VALUES (1184, '140.117.188.158', '2011-12-10 13:08:40');
+INSERT INTO `adminvisitlog` VALUES (1185, '140.117.188.158', '2011-12-10 13:08:49');
+INSERT INTO `adminvisitlog` VALUES (1186, '140.117.188.158', '2011-12-10 13:08:49');
+INSERT INTO `adminvisitlog` VALUES (1187, '140.117.188.158', '2011-12-10 13:08:55');
+INSERT INTO `adminvisitlog` VALUES (1188, '140.117.188.158', '2011-12-10 13:08:55');
+INSERT INTO `adminvisitlog` VALUES (1189, '140.117.188.158', '2011-12-10 13:11:48');
+INSERT INTO `adminvisitlog` VALUES (1190, '140.117.188.158', '2011-12-10 13:15:44');
+INSERT INTO `adminvisitlog` VALUES (1191, '140.117.188.158', '2011-12-10 13:15:58');
+INSERT INTO `adminvisitlog` VALUES (1192, '140.117.188.158', '2011-12-10 13:16:45');
+INSERT INTO `adminvisitlog` VALUES (1193, '140.117.188.158', '2011-12-10 13:16:55');
+INSERT INTO `adminvisitlog` VALUES (1194, '140.117.188.158', '2011-12-10 13:16:56');
+INSERT INTO `adminvisitlog` VALUES (1195, '140.117.188.158', '2011-12-10 13:16:56');
+INSERT INTO `adminvisitlog` VALUES (1196, '140.117.188.158', '2011-12-10 13:17:14');
+INSERT INTO `adminvisitlog` VALUES (1197, '140.117.188.158', '2011-12-10 13:17:14');
+INSERT INTO `adminvisitlog` VALUES (1198, '140.117.188.158', '2011-12-10 13:29:12');
+INSERT INTO `adminvisitlog` VALUES (1199, '140.117.188.158', '2011-12-10 13:41:20');
+INSERT INTO `adminvisitlog` VALUES (1200, '140.117.188.158', '2011-12-10 13:43:33');
+INSERT INTO `adminvisitlog` VALUES (1201, '140.117.188.158', '2011-12-10 13:43:56');
+INSERT INTO `adminvisitlog` VALUES (1202, '140.117.188.158', '2011-12-10 13:45:54');
+INSERT INTO `adminvisitlog` VALUES (1203, '140.117.188.158', '2011-12-10 13:56:13');
+INSERT INTO `adminvisitlog` VALUES (1204, '140.117.188.158', '2011-12-10 13:56:25');
+INSERT INTO `adminvisitlog` VALUES (1205, '140.117.188.158', '2011-12-10 13:56:43');
+INSERT INTO `adminvisitlog` VALUES (1206, '140.117.188.158', '2011-12-10 13:57:07');
+INSERT INTO `adminvisitlog` VALUES (1207, '140.117.188.158', '2011-12-10 13:58:22');
+INSERT INTO `adminvisitlog` VALUES (1208, '140.117.188.158', '2011-12-10 13:58:52');
+INSERT INTO `adminvisitlog` VALUES (1209, '140.117.188.158', '2011-12-10 13:59:04');
+INSERT INTO `adminvisitlog` VALUES (1210, '140.117.188.158', '2011-12-10 13:59:54');
+INSERT INTO `adminvisitlog` VALUES (1211, '140.117.188.158', '2011-12-10 14:00:19');
+INSERT INTO `adminvisitlog` VALUES (1212, '140.117.188.158', '2011-12-10 14:27:12');
+INSERT INTO `adminvisitlog` VALUES (1213, '140.117.188.158', '2011-12-10 14:33:34');
+INSERT INTO `adminvisitlog` VALUES (1214, '140.117.188.158', '2011-12-10 14:33:56');
+INSERT INTO `adminvisitlog` VALUES (1215, '140.117.188.158', '2011-12-10 14:34:29');
+INSERT INTO `adminvisitlog` VALUES (1216, '140.117.188.158', '2011-12-10 14:34:48');
+INSERT INTO `adminvisitlog` VALUES (1217, '140.117.188.158', '2011-12-10 14:35:55');
+INSERT INTO `adminvisitlog` VALUES (1218, '140.117.188.158', '2011-12-10 14:37:02');
+INSERT INTO `adminvisitlog` VALUES (1219, '140.117.188.158', '2011-12-10 14:38:05');
+INSERT INTO `adminvisitlog` VALUES (1220, '140.117.188.158', '2011-12-10 14:38:41');
+INSERT INTO `adminvisitlog` VALUES (1221, '140.117.188.158', '2011-12-10 14:38:57');
+INSERT INTO `adminvisitlog` VALUES (1222, '140.117.188.158', '2011-12-10 14:39:22');
+INSERT INTO `adminvisitlog` VALUES (1223, '140.117.188.158', '2011-12-10 14:39:46');
+INSERT INTO `adminvisitlog` VALUES (1224, '140.117.188.158', '2011-12-10 14:41:59');
+INSERT INTO `adminvisitlog` VALUES (1225, '140.117.188.158', '2011-12-10 14:42:24');
+INSERT INTO `adminvisitlog` VALUES (1226, '140.117.188.158', '2011-12-10 14:42:44');
+INSERT INTO `adminvisitlog` VALUES (1227, '140.117.188.158', '2011-12-10 14:42:59');
+INSERT INTO `adminvisitlog` VALUES (1228, '140.117.188.158', '2011-12-10 14:43:39');
+INSERT INTO `adminvisitlog` VALUES (1229, '140.117.188.158', '2011-12-10 14:47:58');
+INSERT INTO `adminvisitlog` VALUES (1230, '140.117.188.158', '2011-12-10 14:48:42');
+INSERT INTO `adminvisitlog` VALUES (1231, '140.117.188.158', '2011-12-10 14:50:47');
+INSERT INTO `adminvisitlog` VALUES (1232, '140.117.188.158', '2011-12-10 14:50:47');
+INSERT INTO `adminvisitlog` VALUES (1233, '140.117.188.158', '2011-12-10 14:52:50');
+INSERT INTO `adminvisitlog` VALUES (1234, '140.117.188.158', '2011-12-10 14:53:56');
+INSERT INTO `adminvisitlog` VALUES (1235, '140.117.188.158', '2011-12-10 14:56:42');
+INSERT INTO `adminvisitlog` VALUES (1236, '140.117.188.158', '2011-12-10 15:02:11');
+INSERT INTO `adminvisitlog` VALUES (1237, '140.117.188.158', '2011-12-10 15:02:26');
+INSERT INTO `adminvisitlog` VALUES (1238, '140.117.188.158', '2011-12-10 15:04:22');
+INSERT INTO `adminvisitlog` VALUES (1239, '140.117.188.158', '2011-12-10 15:11:06');
+INSERT INTO `adminvisitlog` VALUES (1240, '140.117.188.158', '2011-12-10 15:12:10');
+INSERT INTO `adminvisitlog` VALUES (1241, '140.117.188.158', '2011-12-10 15:12:57');
+INSERT INTO `adminvisitlog` VALUES (1242, '140.117.188.158', '2011-12-10 15:15:00');
+INSERT INTO `adminvisitlog` VALUES (1243, '140.117.188.158', '2011-12-10 15:16:13');
+INSERT INTO `adminvisitlog` VALUES (1244, '140.117.188.158', '2011-12-10 15:17:51');
+INSERT INTO `adminvisitlog` VALUES (1245, '140.117.188.158', '2011-12-10 15:20:29');
+INSERT INTO `adminvisitlog` VALUES (1246, '140.117.188.158', '2011-12-10 15:22:25');
+INSERT INTO `adminvisitlog` VALUES (1247, '140.117.188.158', '2011-12-10 15:22:37');
+INSERT INTO `adminvisitlog` VALUES (1248, '140.117.188.158', '2011-12-10 15:24:13');
+INSERT INTO `adminvisitlog` VALUES (1249, '140.117.188.158', '2011-12-10 15:25:20');
+INSERT INTO `adminvisitlog` VALUES (1250, '140.117.188.158', '2011-12-10 15:33:35');
+INSERT INTO `adminvisitlog` VALUES (1251, '140.117.188.158', '2011-12-10 15:34:16');
+INSERT INTO `adminvisitlog` VALUES (1252, '140.117.188.158', '2011-12-10 15:34:35');
+INSERT INTO `adminvisitlog` VALUES (1253, '140.117.188.158', '2011-12-10 15:35:13');
+INSERT INTO `adminvisitlog` VALUES (1254, '140.117.188.158', '2011-12-10 15:42:21');
+INSERT INTO `adminvisitlog` VALUES (1255, '140.117.188.158', '2011-12-10 15:43:32');
+INSERT INTO `adminvisitlog` VALUES (1256, '140.117.188.158', '2011-12-10 15:43:33');
+INSERT INTO `adminvisitlog` VALUES (1257, '140.117.188.158', '2011-12-10 15:44:03');
+INSERT INTO `adminvisitlog` VALUES (1258, '140.117.188.158', '2011-12-10 15:44:49');
+INSERT INTO `adminvisitlog` VALUES (1259, '140.117.188.158', '2011-12-10 15:45:26');
+INSERT INTO `adminvisitlog` VALUES (1260, '140.117.188.158', '2011-12-10 15:47:10');
+INSERT INTO `adminvisitlog` VALUES (1261, '140.117.188.158', '2011-12-10 15:47:15');
+INSERT INTO `adminvisitlog` VALUES (1262, '140.117.188.158', '2011-12-10 15:47:19');
+INSERT INTO `adminvisitlog` VALUES (1263, '140.117.188.158', '2011-12-10 15:47:20');
+INSERT INTO `adminvisitlog` VALUES (1264, '140.117.188.158', '2011-12-10 15:47:36');
+INSERT INTO `adminvisitlog` VALUES (1265, '140.117.188.158', '2011-12-10 15:48:08');
+INSERT INTO `adminvisitlog` VALUES (1266, '140.117.188.158', '2011-12-10 15:48:10');
+INSERT INTO `adminvisitlog` VALUES (1267, '140.117.188.158', '2011-12-10 15:48:10');
+INSERT INTO `adminvisitlog` VALUES (1268, '140.117.188.158', '2011-12-10 15:48:10');
+INSERT INTO `adminvisitlog` VALUES (1269, '140.117.188.158', '2011-12-10 15:48:11');
+INSERT INTO `adminvisitlog` VALUES (1270, '140.117.188.158', '2011-12-10 15:51:17');
+INSERT INTO `adminvisitlog` VALUES (1271, '140.117.188.158', '2011-12-10 15:51:18');
+INSERT INTO `adminvisitlog` VALUES (1272, '140.117.188.158', '2011-12-10 15:52:01');
+INSERT INTO `adminvisitlog` VALUES (1273, '140.117.188.158', '2011-12-10 15:53:20');
+INSERT INTO `adminvisitlog` VALUES (1274, '140.117.188.158', '2011-12-10 15:53:59');
+INSERT INTO `adminvisitlog` VALUES (1275, '140.117.188.158', '2011-12-10 15:55:49');
+INSERT INTO `adminvisitlog` VALUES (1276, '140.117.188.158', '2011-12-10 15:57:12');
+INSERT INTO `adminvisitlog` VALUES (1277, '140.117.188.158', '2011-12-10 15:58:22');
+INSERT INTO `adminvisitlog` VALUES (1278, '140.117.188.158', '2011-12-10 15:58:23');
+INSERT INTO `adminvisitlog` VALUES (1279, '140.117.188.158', '2011-12-10 15:58:45');
+INSERT INTO `adminvisitlog` VALUES (1280, '140.117.188.158', '2011-12-10 15:58:45');
+INSERT INTO `adminvisitlog` VALUES (1281, '140.117.188.158', '2011-12-10 15:58:51');
+INSERT INTO `adminvisitlog` VALUES (1282, '140.117.188.158', '2011-12-10 15:58:51');
+INSERT INTO `adminvisitlog` VALUES (1283, '140.117.188.158', '2011-12-10 15:59:52');
+INSERT INTO `adminvisitlog` VALUES (1284, '140.117.188.158', '2011-12-10 16:00:27');
+INSERT INTO `adminvisitlog` VALUES (1285, '140.117.188.158', '2011-12-10 16:02:57');
+INSERT INTO `adminvisitlog` VALUES (1286, '140.117.188.158', '2011-12-10 16:04:33');
+INSERT INTO `adminvisitlog` VALUES (1287, '140.117.188.158', '2011-12-10 16:04:44');
+INSERT INTO `adminvisitlog` VALUES (1288, '140.117.188.158', '2011-12-10 16:06:46');
+INSERT INTO `adminvisitlog` VALUES (1289, '140.117.188.158', '2011-12-10 16:07:13');
+INSERT INTO `adminvisitlog` VALUES (1290, '140.117.188.158', '2011-12-10 16:17:59');
+INSERT INTO `adminvisitlog` VALUES (1291, '140.117.188.158', '2011-12-10 16:19:09');
+INSERT INTO `adminvisitlog` VALUES (1292, '140.117.188.158', '2011-12-10 16:19:39');
+INSERT INTO `adminvisitlog` VALUES (1293, '140.117.188.158', '2011-12-10 16:19:39');
+INSERT INTO `adminvisitlog` VALUES (1294, '140.117.188.158', '2011-12-10 16:19:39');
+INSERT INTO `adminvisitlog` VALUES (1295, '140.117.188.158', '2011-12-10 16:19:40');
+INSERT INTO `adminvisitlog` VALUES (1296, '140.117.188.158', '2011-12-10 16:19:40');
+INSERT INTO `adminvisitlog` VALUES (1297, '140.117.188.158', '2011-12-10 16:19:40');
+INSERT INTO `adminvisitlog` VALUES (1298, '140.117.188.158', '2011-12-10 16:19:40');
+INSERT INTO `adminvisitlog` VALUES (1299, '140.117.188.158', '2011-12-10 16:19:41');
+INSERT INTO `adminvisitlog` VALUES (1300, '140.117.188.158', '2011-12-10 16:19:41');
+INSERT INTO `adminvisitlog` VALUES (1301, '140.117.188.158', '2011-12-10 16:19:41');
+INSERT INTO `adminvisitlog` VALUES (1302, '140.117.188.158', '2011-12-10 16:19:41');
+INSERT INTO `adminvisitlog` VALUES (1303, '140.117.188.158', '2011-12-10 16:19:41');
+INSERT INTO `adminvisitlog` VALUES (1304, '140.117.188.158', '2011-12-10 16:19:41');
+INSERT INTO `adminvisitlog` VALUES (1305, '140.117.188.158', '2011-12-10 16:19:41');
+INSERT INTO `adminvisitlog` VALUES (1306, '140.117.188.158', '2011-12-10 16:19:41');
+INSERT INTO `adminvisitlog` VALUES (1307, '140.117.188.158', '2011-12-10 16:19:42');
+INSERT INTO `adminvisitlog` VALUES (1308, '140.117.188.158', '2011-12-10 16:19:42');
+INSERT INTO `adminvisitlog` VALUES (1309, '140.117.188.158', '2011-12-10 16:21:23');
+INSERT INTO `adminvisitlog` VALUES (1310, '140.117.188.158', '2011-12-10 16:21:23');
+INSERT INTO `adminvisitlog` VALUES (1311, '140.117.188.158', '2011-12-10 16:21:29');
+INSERT INTO `adminvisitlog` VALUES (1312, '140.117.188.158', '2011-12-10 16:21:29');
+INSERT INTO `adminvisitlog` VALUES (1313, '140.117.188.158', '2011-12-10 16:21:32');
+INSERT INTO `adminvisitlog` VALUES (1314, '140.117.188.158', '2011-12-10 16:21:32');
+INSERT INTO `adminvisitlog` VALUES (1315, '140.117.188.158', '2011-12-10 16:21:32');
+INSERT INTO `adminvisitlog` VALUES (1316, '140.117.188.158', '2011-12-10 16:21:50');
+INSERT INTO `adminvisitlog` VALUES (1317, '140.117.188.158', '2011-12-10 16:21:50');
+INSERT INTO `adminvisitlog` VALUES (1318, '140.117.188.158', '2011-12-10 16:21:56');
+INSERT INTO `adminvisitlog` VALUES (1319, '140.117.188.158', '2011-12-10 16:21:56');
+INSERT INTO `adminvisitlog` VALUES (1320, '140.117.188.158', '2011-12-10 16:22:49');
+INSERT INTO `adminvisitlog` VALUES (1321, '140.117.188.158', '2011-12-10 16:22:52');
+INSERT INTO `adminvisitlog` VALUES (1322, '140.117.188.158', '2011-12-10 16:22:52');
+INSERT INTO `adminvisitlog` VALUES (1323, '140.117.188.158', '2011-12-10 16:22:52');
+INSERT INTO `adminvisitlog` VALUES (1324, '140.117.188.158', '2011-12-10 16:22:52');
+INSERT INTO `adminvisitlog` VALUES (1325, '140.117.188.158', '2011-12-10 16:22:52');
+INSERT INTO `adminvisitlog` VALUES (1326, '140.117.188.158', '2011-12-10 16:22:52');
+INSERT INTO `adminvisitlog` VALUES (1327, '140.117.188.158', '2011-12-10 16:22:52');
+INSERT INTO `adminvisitlog` VALUES (1328, '140.117.188.158', '2011-12-10 16:22:52');
+INSERT INTO `adminvisitlog` VALUES (1329, '140.117.188.158', '2011-12-10 16:22:52');
+INSERT INTO `adminvisitlog` VALUES (1330, '140.117.188.158', '2011-12-10 16:22:53');
+INSERT INTO `adminvisitlog` VALUES (1331, '140.117.188.158', '2011-12-10 16:22:53');
+INSERT INTO `adminvisitlog` VALUES (1332, '140.117.188.158', '2011-12-10 16:22:53');
+INSERT INTO `adminvisitlog` VALUES (1333, '140.117.188.158', '2011-12-10 16:22:53');
+INSERT INTO `adminvisitlog` VALUES (1334, '140.117.188.158', '2011-12-10 16:22:53');
+INSERT INTO `adminvisitlog` VALUES (1335, '140.117.188.158', '2011-12-10 16:22:53');
+INSERT INTO `adminvisitlog` VALUES (1336, '140.117.188.158', '2011-12-10 16:22:53');
+INSERT INTO `adminvisitlog` VALUES (1337, '140.117.188.158', '2011-12-10 16:22:53');
+INSERT INTO `adminvisitlog` VALUES (1338, '140.117.188.158', '2011-12-10 16:22:53');
+INSERT INTO `adminvisitlog` VALUES (1339, '140.117.188.158', '2011-12-10 16:22:53');
+INSERT INTO `adminvisitlog` VALUES (1340, '140.117.188.158', '2011-12-10 16:22:53');
+INSERT INTO `adminvisitlog` VALUES (1341, '140.117.188.158', '2011-12-10 16:22:53');
+INSERT INTO `adminvisitlog` VALUES (1342, '140.117.188.158', '2011-12-10 16:22:53');
+INSERT INTO `adminvisitlog` VALUES (1343, '140.117.188.158', '2011-12-10 16:22:54');
+INSERT INTO `adminvisitlog` VALUES (1344, '140.117.188.158', '2011-12-10 16:22:54');
+INSERT INTO `adminvisitlog` VALUES (1345, '140.117.188.158', '2011-12-10 16:22:54');
+INSERT INTO `adminvisitlog` VALUES (1346, '140.117.188.158', '2011-12-10 16:22:54');
+INSERT INTO `adminvisitlog` VALUES (1347, '140.117.188.158', '2011-12-10 16:22:54');
+INSERT INTO `adminvisitlog` VALUES (1348, '140.117.188.158', '2011-12-10 16:22:54');
+INSERT INTO `adminvisitlog` VALUES (1349, '140.117.188.158', '2011-12-10 16:22:54');
+INSERT INTO `adminvisitlog` VALUES (1350, '140.117.188.158', '2011-12-10 16:22:54');
+INSERT INTO `adminvisitlog` VALUES (1351, '140.117.188.158', '2011-12-10 16:23:04');
+INSERT INTO `adminvisitlog` VALUES (1352, '140.117.188.158', '2011-12-10 16:23:04');
+INSERT INTO `adminvisitlog` VALUES (1353, '140.117.188.158', '2011-12-10 16:23:11');
+INSERT INTO `adminvisitlog` VALUES (1354, '140.117.188.158', '2011-12-10 16:23:11');
+INSERT INTO `adminvisitlog` VALUES (1355, '140.117.188.158', '2011-12-10 16:23:12');
+INSERT INTO `adminvisitlog` VALUES (1356, '140.117.188.158', '2011-12-10 16:23:13');
+INSERT INTO `adminvisitlog` VALUES (1357, '140.117.188.158', '2011-12-10 16:23:13');
+INSERT INTO `adminvisitlog` VALUES (1358, '140.117.188.158', '2011-12-10 16:23:34');
+INSERT INTO `adminvisitlog` VALUES (1359, '140.117.188.158', '2011-12-10 16:23:34');
+INSERT INTO `adminvisitlog` VALUES (1360, '140.117.188.158', '2011-12-10 16:23:35');
+INSERT INTO `adminvisitlog` VALUES (1361, '140.117.188.158', '2011-12-10 16:23:35');
+INSERT INTO `adminvisitlog` VALUES (1362, '140.117.188.158', '2011-12-10 16:23:35');
+INSERT INTO `adminvisitlog` VALUES (1363, '140.117.188.158', '2011-12-10 16:23:35');
+INSERT INTO `adminvisitlog` VALUES (1364, '140.117.188.158', '2011-12-10 16:23:35');
+INSERT INTO `adminvisitlog` VALUES (1365, '140.117.188.158', '2011-12-10 16:23:35');
+INSERT INTO `adminvisitlog` VALUES (1366, '140.117.188.158', '2011-12-10 16:23:36');
+INSERT INTO `adminvisitlog` VALUES (1367, '140.117.188.158', '2011-12-10 16:23:36');
+INSERT INTO `adminvisitlog` VALUES (1368, '140.117.188.158', '2011-12-10 16:23:36');
+INSERT INTO `adminvisitlog` VALUES (1369, '140.117.188.158', '2011-12-10 16:23:36');
+INSERT INTO `adminvisitlog` VALUES (1370, '140.117.188.158', '2011-12-10 16:23:36');
+INSERT INTO `adminvisitlog` VALUES (1371, '140.117.188.158', '2011-12-10 16:23:36');
+INSERT INTO `adminvisitlog` VALUES (1372, '140.117.188.158', '2011-12-10 16:23:36');
+INSERT INTO `adminvisitlog` VALUES (1373, '140.117.188.158', '2011-12-10 16:23:36');
+INSERT INTO `adminvisitlog` VALUES (1374, '140.117.188.158', '2011-12-10 16:23:36');
+INSERT INTO `adminvisitlog` VALUES (1375, '140.117.188.158', '2011-12-10 16:23:36');
+INSERT INTO `adminvisitlog` VALUES (1376, '140.117.188.158', '2011-12-10 16:23:37');
+INSERT INTO `adminvisitlog` VALUES (1377, '140.117.188.158', '2011-12-10 16:23:37');
+INSERT INTO `adminvisitlog` VALUES (1378, '140.117.188.158', '2011-12-10 16:23:37');
+INSERT INTO `adminvisitlog` VALUES (1379, '140.117.188.158', '2011-12-10 16:23:37');
+INSERT INTO `adminvisitlog` VALUES (1380, '140.117.188.158', '2011-12-10 16:23:37');
+INSERT INTO `adminvisitlog` VALUES (1381, '140.117.188.158', '2011-12-10 16:23:37');
+INSERT INTO `adminvisitlog` VALUES (1382, '140.117.188.158', '2011-12-10 16:23:38');
+INSERT INTO `adminvisitlog` VALUES (1383, '140.117.188.158', '2011-12-10 16:23:38');
+INSERT INTO `adminvisitlog` VALUES (1384, '140.117.188.158', '2011-12-10 16:23:38');
+INSERT INTO `adminvisitlog` VALUES (1385, '140.117.188.158', '2011-12-10 16:23:38');
+INSERT INTO `adminvisitlog` VALUES (1386, '140.117.188.158', '2011-12-10 16:23:38');
+INSERT INTO `adminvisitlog` VALUES (1387, '140.117.188.158', '2011-12-10 16:23:38');
+INSERT INTO `adminvisitlog` VALUES (1388, '140.117.188.158', '2011-12-10 16:23:38');
+INSERT INTO `adminvisitlog` VALUES (1389, '140.117.188.158', '2011-12-10 16:23:38');
+INSERT INTO `adminvisitlog` VALUES (1390, '140.117.188.158', '2011-12-10 16:23:38');
+INSERT INTO `adminvisitlog` VALUES (1391, '140.117.188.158', '2011-12-10 16:23:38');
+INSERT INTO `adminvisitlog` VALUES (1392, '140.117.188.158', '2011-12-10 16:23:38');
+INSERT INTO `adminvisitlog` VALUES (1393, '140.117.188.158', '2011-12-10 16:23:38');
+INSERT INTO `adminvisitlog` VALUES (1394, '140.117.188.158', '2011-12-10 16:23:39');
+INSERT INTO `adminvisitlog` VALUES (1395, '140.117.188.158', '2011-12-10 16:23:39');
+INSERT INTO `adminvisitlog` VALUES (1396, '140.117.188.158', '2011-12-10 16:23:39');
+INSERT INTO `adminvisitlog` VALUES (1397, '140.117.188.158', '2011-12-10 16:23:39');
+INSERT INTO `adminvisitlog` VALUES (1398, '140.117.188.158', '2011-12-10 16:42:00');
+INSERT INTO `adminvisitlog` VALUES (1399, '140.117.188.158', '2011-12-10 16:42:08');
+INSERT INTO `adminvisitlog` VALUES (1400, '140.117.188.158', '2011-12-10 16:42:08');
+INSERT INTO `adminvisitlog` VALUES (1401, '140.117.188.158', '2011-12-10 16:42:12');
+INSERT INTO `adminvisitlog` VALUES (1402, '140.117.188.158', '2011-12-10 16:42:13');
+INSERT INTO `adminvisitlog` VALUES (1403, '140.117.188.158', '2011-12-10 16:42:13');
+INSERT INTO `adminvisitlog` VALUES (1404, '140.117.188.158', '2011-12-10 16:42:13');
+INSERT INTO `adminvisitlog` VALUES (1405, '140.117.188.158', '2011-12-10 16:42:13');
+INSERT INTO `adminvisitlog` VALUES (1406, '140.117.188.158', '2011-12-10 16:42:13');
+INSERT INTO `adminvisitlog` VALUES (1407, '140.117.188.158', '2011-12-10 16:42:13');
+INSERT INTO `adminvisitlog` VALUES (1408, '140.117.188.158', '2011-12-10 16:42:23');
+INSERT INTO `adminvisitlog` VALUES (1409, '140.117.188.158', '2011-12-10 16:42:23');
+INSERT INTO `adminvisitlog` VALUES (1410, '140.117.188.158', '2011-12-10 16:42:24');
+INSERT INTO `adminvisitlog` VALUES (1411, '140.117.188.158', '2011-12-10 16:42:24');
+INSERT INTO `adminvisitlog` VALUES (1412, '140.117.188.158', '2011-12-10 16:42:24');
+INSERT INTO `adminvisitlog` VALUES (1413, '140.117.188.158', '2011-12-10 16:42:24');
+INSERT INTO `adminvisitlog` VALUES (1414, '140.117.188.158', '2011-12-10 16:42:24');
+INSERT INTO `adminvisitlog` VALUES (1415, '140.117.188.158', '2011-12-10 16:42:24');
+INSERT INTO `adminvisitlog` VALUES (1416, '140.117.188.158', '2011-12-10 16:42:24');
+INSERT INTO `adminvisitlog` VALUES (1417, '140.117.188.158', '2011-12-10 16:42:24');
+INSERT INTO `adminvisitlog` VALUES (1418, '140.117.188.158', '2011-12-10 16:42:24');
+INSERT INTO `adminvisitlog` VALUES (1419, '140.117.188.158', '2011-12-10 16:42:24');
+INSERT INTO `adminvisitlog` VALUES (1420, '140.117.188.158', '2011-12-10 16:42:25');
+INSERT INTO `adminvisitlog` VALUES (1421, '140.117.188.158', '2011-12-10 16:42:25');
+INSERT INTO `adminvisitlog` VALUES (1422, '140.117.188.158', '2011-12-10 16:42:25');
+INSERT INTO `adminvisitlog` VALUES (1423, '140.117.188.158', '2011-12-10 16:42:25');
+INSERT INTO `adminvisitlog` VALUES (1424, '140.117.188.158', '2011-12-10 16:42:33');
+INSERT INTO `adminvisitlog` VALUES (1425, '140.117.188.158', '2011-12-10 16:42:33');
+INSERT INTO `adminvisitlog` VALUES (1426, '140.117.188.158', '2011-12-10 16:42:33');
+INSERT INTO `adminvisitlog` VALUES (1427, '140.117.188.158', '2011-12-10 16:42:33');
+INSERT INTO `adminvisitlog` VALUES (1428, '140.117.188.158', '2011-12-10 16:45:33');
+INSERT INTO `adminvisitlog` VALUES (1429, '140.117.188.158', '2011-12-10 16:45:33');
+INSERT INTO `adminvisitlog` VALUES (1430, '140.117.188.158', '2011-12-10 16:45:40');
+INSERT INTO `adminvisitlog` VALUES (1431, '140.117.188.158', '2011-12-10 16:45:40');
+INSERT INTO `adminvisitlog` VALUES (1432, '140.117.188.158', '2011-12-10 16:45:42');
+INSERT INTO `adminvisitlog` VALUES (1433, '140.117.188.158', '2011-12-10 16:54:02');
+INSERT INTO `adminvisitlog` VALUES (1434, '140.117.188.158', '2011-12-10 16:54:11');
+INSERT INTO `adminvisitlog` VALUES (1435, '140.117.188.158', '2011-12-10 16:54:11');
+INSERT INTO `adminvisitlog` VALUES (1436, '140.117.188.158', '2011-12-10 16:54:13');
+INSERT INTO `adminvisitlog` VALUES (1437, '140.117.188.158', '2011-12-10 16:57:53');
+INSERT INTO `adminvisitlog` VALUES (1438, '140.117.188.158', '2011-12-10 17:07:51');
+INSERT INTO `adminvisitlog` VALUES (1439, '140.117.188.158', '2011-12-10 17:08:40');
+INSERT INTO `adminvisitlog` VALUES (1440, '140.117.188.158', '2011-12-10 17:08:40');
+INSERT INTO `adminvisitlog` VALUES (1441, '140.117.188.158', '2011-12-10 17:08:40');
+INSERT INTO `adminvisitlog` VALUES (1442, '140.117.188.158', '2011-12-10 17:08:46');
+INSERT INTO `adminvisitlog` VALUES (1443, '140.117.188.158', '2011-12-10 17:08:46');
+INSERT INTO `adminvisitlog` VALUES (1444, '140.117.188.158', '2011-12-10 23:13:34');
+INSERT INTO `adminvisitlog` VALUES (1445, '140.117.188.158', '2011-12-10 23:13:34');
+INSERT INTO `adminvisitlog` VALUES (1446, '140.117.188.158', '2011-12-10 23:26:54');
+INSERT INTO `adminvisitlog` VALUES (1447, '140.117.188.158', '2011-12-10 23:26:54');
+INSERT INTO `adminvisitlog` VALUES (1448, '140.117.188.158', '2011-12-10 23:28:06');
+INSERT INTO `adminvisitlog` VALUES (1449, '140.117.188.158', '2011-12-10 23:28:06');
+INSERT INTO `adminvisitlog` VALUES (1450, '140.117.188.158', '2011-12-10 23:28:07');
+INSERT INTO `adminvisitlog` VALUES (1451, '140.117.188.158', '2011-12-10 23:28:07');
+INSERT INTO `adminvisitlog` VALUES (1452, '140.117.188.158', '2011-12-10 23:28:27');
+INSERT INTO `adminvisitlog` VALUES (1453, '140.117.188.158', '2011-12-10 23:28:29');
+INSERT INTO `adminvisitlog` VALUES (1454, '140.117.188.158', '2011-12-10 23:28:29');
+INSERT INTO `adminvisitlog` VALUES (1455, '140.117.188.158', '2011-12-10 23:28:37');
+INSERT INTO `adminvisitlog` VALUES (1456, '140.117.188.158', '2011-12-10 23:28:37');
+INSERT INTO `adminvisitlog` VALUES (1457, '140.117.188.158', '2011-12-10 23:30:41');
+INSERT INTO `adminvisitlog` VALUES (1458, '140.117.188.158', '2011-12-10 23:30:41');
+INSERT INTO `adminvisitlog` VALUES (1459, '140.117.188.158', '2011-12-11 00:14:38');
+INSERT INTO `adminvisitlog` VALUES (1460, '140.117.188.158', '2011-12-11 00:14:44');
+INSERT INTO `adminvisitlog` VALUES (1461, '140.117.188.158', '2011-12-11 00:14:54');
+INSERT INTO `adminvisitlog` VALUES (1462, '140.117.188.158', '2011-12-11 00:14:54');
+INSERT INTO `adminvisitlog` VALUES (1463, '140.117.188.158', '2011-12-11 00:14:56');
+INSERT INTO `adminvisitlog` VALUES (1464, '140.117.188.158', '2011-12-11 00:14:56');
+INSERT INTO `adminvisitlog` VALUES (1465, '140.117.188.158', '2011-12-11 00:15:01');
+INSERT INTO `adminvisitlog` VALUES (1466, '140.117.188.158', '2011-12-11 00:15:01');
+INSERT INTO `adminvisitlog` VALUES (1467, '140.117.188.158', '2011-12-11 00:16:12');
+INSERT INTO `adminvisitlog` VALUES (1468, '140.117.188.158', '2011-12-11 00:19:28');
+INSERT INTO `adminvisitlog` VALUES (1469, '140.117.188.158', '2011-12-11 00:25:43');
+INSERT INTO `adminvisitlog` VALUES (1470, '140.117.188.158', '2011-12-11 00:25:43');
+INSERT INTO `adminvisitlog` VALUES (1471, '140.117.188.158', '2011-12-11 00:26:06');
+INSERT INTO `adminvisitlog` VALUES (1472, '140.117.188.158', '2011-12-11 00:27:01');
+INSERT INTO `adminvisitlog` VALUES (1473, '140.117.188.158', '2011-12-11 00:27:01');
+INSERT INTO `adminvisitlog` VALUES (1474, '140.117.169.186', '2011-12-12 09:57:07');
+INSERT INTO `adminvisitlog` VALUES (1475, '140.117.169.186', '2011-12-12 09:57:14');
+INSERT INTO `adminvisitlog` VALUES (1476, '140.117.169.186', '2011-12-12 09:57:14');
+INSERT INTO `adminvisitlog` VALUES (1477, '140.117.120.20', '2011-12-14 11:23:42');
+INSERT INTO `adminvisitlog` VALUES (1478, '140.117.120.20', '2011-12-14 11:23:50');
+INSERT INTO `adminvisitlog` VALUES (1479, '140.117.120.20', '2011-12-14 11:23:50');
+INSERT INTO `adminvisitlog` VALUES (1480, '140.117.169.186', '2011-12-14 12:26:47');
+INSERT INTO `adminvisitlog` VALUES (1481, '140.117.169.186', '2011-12-14 12:26:53');
+INSERT INTO `adminvisitlog` VALUES (1482, '140.117.169.186', '2011-12-14 12:26:53');
+INSERT INTO `adminvisitlog` VALUES (1483, '140.117.169.186', '2011-12-14 12:30:07');
+INSERT INTO `adminvisitlog` VALUES (1484, '140.117.169.186', '2011-12-14 12:31:45');
+INSERT INTO `adminvisitlog` VALUES (1485, '140.117.188.158', '2011-12-18 21:13:58');
+INSERT INTO `adminvisitlog` VALUES (1486, '140.117.188.158', '2011-12-18 21:13:58');
+INSERT INTO `adminvisitlog` VALUES (1487, '140.117.169.186', '2011-12-21 12:01:05');
+INSERT INTO `adminvisitlog` VALUES (1488, '140.117.169.186', '2011-12-21 12:01:05');
+
+-- --------------------------------------------------------
+
+-- 
+-- 資料表格式： `answer`
+-- 
+
+CREATE TABLE `answer` (
+  `quest_id` int(11) NOT NULL,
+  `optId` varchar(1) NOT NULL,
+  `options` varchar(255) NOT NULL,
+  UNIQUE KEY `quest_id_2` (`quest_id`,`optId`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- 
+-- 列出以下資料庫的數據： `answer`
+-- 
+
+INSERT INTO `answer` VALUES (48, '3', '2004');
+INSERT INTO `answer` VALUES (9, '4', '1,000以下');
+INSERT INTO `answer` VALUES (8, '1', 'Contemporary Jazz');
+INSERT INTO `answer` VALUES (4, '4', 'ProQuest Dissertations and Theses (PQDT)');
+INSERT INTO `answer` VALUES (4, '3', '數位化論文典藏聯盟 (DDC)');
+INSERT INTO `answer` VALUES (3, '1', '15頁');
+INSERT INTO `answer` VALUES (8, '2', 'Folk Legends');
+INSERT INTO `answer` VALUES (5, '1', '利用資料庫總覽網頁查詢');
+INSERT INTO `answer` VALUES (5, '2', '利用西文全文電子期刊查詢');
+INSERT INTO `answer` VALUES (10, '4', 'Canadian Journal of Criminology and Criminal Justice');
+INSERT INTO `answer` VALUES (10, '3', 'portal: Libraries and the Academy');
+INSERT INTO `answer` VALUES (3, '3', '10頁');
+INSERT INTO `answer` VALUES (11, '3', 'The Art bulletin');
+INSERT INTO `answer` VALUES (11, '2', 'Europe');
+INSERT INTO `answer` VALUES (11, '1', 'Victorian studies');
+INSERT INTO `answer` VALUES (12, '1', '8篇');
+INSERT INTO `answer` VALUES (12, '2', '3篇');
+INSERT INTO `answer` VALUES (13, '3', '2009');
+INSERT INTO `answer` VALUES (13, '4', '2010');
+INSERT INTO `answer` VALUES (45, '1', '聯合知識庫');
+INSERT INTO `answer` VALUES (55, '1', 'NOKIA CORP');
+INSERT INTO `answer` VALUES (56, '1', 'Advanced Synthesis & Catalysis | Impact Factor: 5.25| 1/70 (Chemistry Applied) ');
+INSERT INTO `answer` VALUES (14, '3', 'CISCO SYSTEMS INC');
+INSERT INTO `answer` VALUES (14, '2', ' TEXAS INSTRUMENTS INC');
+INSERT INTO `answer` VALUES (14, '1', 'COGO GROUP INC');
+INSERT INTO `answer` VALUES (15, '2', '由圖資處首頁進入資料庫總覽，搜尋“Aremos”後點選連結進入。');
+INSERT INTO `answer` VALUES (15, '3', '先在AREMOS網站搜尋資料變數代號。');
+INSERT INTO `answer` VALUES (15, '4', '再連到網路磁碟機“Z:”選擇欲查找資料庫的代碼(*.bnk)。');
+INSERT INTO `answer` VALUES (16, '1', '1986年');
+INSERT INTO `answer` VALUES (16, '2', '1988年');
+INSERT INTO `answer` VALUES (17, '2', 'CHIU CN');
+INSERT INTO `answer` VALUES (17, '3', 'WONG KIN LU ');
+INSERT INTO `answer` VALUES (18, '3', 'Journal');
+INSERT INTO `answer` VALUES (18, '2', 'Book Series');
+INSERT INTO `answer` VALUES (19, '2', 'Early Supersymmetry Searches with ATLAS Detector at LHC');
+INSERT INTO `answer` VALUES (19, '3', 'Signatures of Supersymmetry at the LHC');
+INSERT INTO `answer` VALUES (20, '1', '1000篇以下');
+INSERT INTO `answer` VALUES (20, '2', '1001 - 3000篇');
+INSERT INTO `answer` VALUES (21, '4', '1961-2003');
+INSERT INTO `answer` VALUES (21, '3', '1961-2000');
+INSERT INTO `answer` VALUES (21, '2', '1961-1998');
+INSERT INTO `answer` VALUES (21, '1', '1961-1996');
+INSERT INTO `answer` VALUES (34, '4', '6位');
+INSERT INTO `answer` VALUES (30, '1', '國際標準期刊號');
+INSERT INTO `answer` VALUES (30, '2', '作者所屬機構/學校');
+INSERT INTO `answer` VALUES (30, '3', '期刊名或電子書名');
+INSERT INTO `answer` VALUES (30, '4', '參考書目');
+INSERT INTO `answer` VALUES (31, '4', '研討會議論文集');
+INSERT INTO `answer` VALUES (33, '1', '農業生物技術');
+INSERT INTO `answer` VALUES (7, '2', 'The Metropolitan Museum of Art Bulletin');
+INSERT INTO `answer` VALUES (7, '3', 'Recent Acquisitions');
+INSERT INTO `answer` VALUES (22, '2', '英雄本色');
+INSERT INTO `answer` VALUES (23, '2', '4樓參考諮詢組');
+INSERT INTO `answer` VALUES (23, '1', '1樓集思軒');
+INSERT INTO `answer` VALUES (25, '4', '10樓');
+INSERT INTO `answer` VALUES (1, '2', '高雄應用科技大學');
+INSERT INTO `answer` VALUES (26, '1', '全國文獻傳遞服務系統NDDS');
+INSERT INTO `answer` VALUES (28, '2', 'Walking Library 電子期刊資料庫 (Acer Walking Library)');
+INSERT INTO `answer` VALUES (1, '3', '高雄空中大學');
+INSERT INTO `answer` VALUES (22, '1', '紅磨坊');
+INSERT INTO `answer` VALUES (27, '2', 'HG4028.M4.R48 2007');
+INSERT INTO `answer` VALUES (4, '2', '臺灣博碩士論文知識加值系統(NDLTD)');
+INSERT INTO `answer` VALUES (26, '2', '高高屏代借代還服務');
+INSERT INTO `answer` VALUES (23, '3', '4樓語言自學教室');
+INSERT INTO `answer` VALUES (22, '3', '34街的奇蹟');
+INSERT INTO `answer` VALUES (24, '3', '全國圖書書目資訊網');
+INSERT INTO `answer` VALUES (24, '2', '出版期刊指南系統');
+INSERT INTO `answer` VALUES (24, '1', '臺灣期刊論文索引系統');
+INSERT INTO `answer` VALUES (2, '3', '政治大學');
+INSERT INTO `answer` VALUES (3, '2', '20頁');
+INSERT INTO `answer` VALUES (5, '3', '利用eThesys 碩博士論文查詢');
+INSERT INTO `answer` VALUES (27, '3', 'HD553 F67 1971');
+INSERT INTO `answer` VALUES (25, '3', '9樓');
+INSERT INTO `answer` VALUES (28, '3', '遠見雜誌知識庫');
+INSERT INTO `answer` VALUES (28, '4', '科學人雜誌知識庫');
+INSERT INTO `answer` VALUES (29, '2', '穿夾腳拖鞋進圖書館');
+INSERT INTO `answer` VALUES (7, '1', 'American Art');
+INSERT INTO `answer` VALUES (8, '3', 'Korea Music');
+INSERT INTO `answer` VALUES (9, '3', '1,001~2,000');
+INSERT INTO `answer` VALUES (48, '4', '2005');
+INSERT INTO `answer` VALUES (11, '4', 'Journal of adolescence');
+INSERT INTO `answer` VALUES (31, '1', '電子期刊');
+INSERT INTO `answer` VALUES (31, '2', '電子書');
+INSERT INTO `answer` VALUES (32, '2', '1,500~3,000篇');
+INSERT INTO `answer` VALUES (33, '3', '工業衛生');
+INSERT INTO `answer` VALUES (33, '4', '空氣品質');
+INSERT INTO `answer` VALUES (31, '3', '實驗室指南(protocols)');
+INSERT INTO `answer` VALUES (33, '2', '環境影響報告 (U.S.)');
+INSERT INTO `answer` VALUES (34, '1', '3位');
+INSERT INTO `answer` VALUES (35, '1', '不到100種');
+INSERT INTO `answer` VALUES (36, '1', '1958');
+INSERT INTO `answer` VALUES (37, '3', '財經研究相關加值(ex.公司治理、市場多因子…etc)');
+INSERT INTO `answer` VALUES (37, '1', '報紙新聞資料');
+INSERT INTO `answer` VALUES (37, '2', '亞洲地區財經資料庫');
+INSERT INTO `answer` VALUES (38, '4', '1991');
+INSERT INTO `answer` VALUES (39, '3', '符合條件的有NEC CORPORATION');
+INSERT INTO `answer` VALUES (39, '4', '可以看到有德國的企業公司');
+INSERT INTO `answer` VALUES (40, '3', 'SmartText 檢索');
+INSERT INTO `answer` VALUES (40, '2', '尋找我的所有搜尋項目');
+INSERT INTO `answer` VALUES (41, '3', 'Dendritic cells: Understanding immunogenicity ');
+INSERT INTO `answer` VALUES (9, '2', '2,001~3,000');
+INSERT INTO `answer` VALUES (42, '2', '關鍵詞有張愛玲、蒼涼、入世、安穩');
+INSERT INTO `answer` VALUES (42, '3', '作者單位為楚雄師範學院');
+INSERT INTO `answer` VALUES (39, '2', '全部都是Public的公司');
+INSERT INTO `answer` VALUES (42, '1', '作者為李桂萍');
+INSERT INTO `answer` VALUES (2, '4', '交通大學');
+INSERT INTO `answer` VALUES (34, '2', '4位');
+INSERT INTO `answer` VALUES (38, '3', '1989');
+INSERT INTO `answer` VALUES (34, '3', '5位');
+INSERT INTO `answer` VALUES (25, '2', '8樓');
+INSERT INTO `answer` VALUES (28, '1', '天下雜誌知識庫');
+INSERT INTO `answer` VALUES (29, '3', '在館內飲食');
+INSERT INTO `answer` VALUES (41, '2', 'CD8(+)CD205(+) Splenic Dendritic Cells Are Specialized to Induce Foxp3(+) Regulatory T Cells ');
+INSERT INTO `answer` VALUES (40, '4', '所列選項皆非');
+INSERT INTO `answer` VALUES (8, '4', 'Relaxation Music');
+INSERT INTO `answer` VALUES (43, '4', 'aa');
+INSERT INTO `answer` VALUES (43, '3', 'ss');
+INSERT INTO `answer` VALUES (43, '2', 'ss');
+INSERT INTO `answer` VALUES (43, '1', 'sa');
+INSERT INTO `answer` VALUES (32, '3', '500~1,500篇');
+INSERT INTO `answer` VALUES (36, '2', '1968');
+INSERT INTO `answer` VALUES (6, '1', 'The American Journal of Sociology');
+INSERT INTO `answer` VALUES (38, '2', '1987');
+INSERT INTO `answer` VALUES (14, '4', 'NOKIA CORP');
+INSERT INTO `answer` VALUES (15, '1', '親自到圖書館4F參考組換證使用PC2或PC3電腦。');
+INSERT INTO `answer` VALUES (35, '2', '100~180種');
+INSERT INTO `answer` VALUES (17, '1', 'WONG KL');
+INSERT INTO `answer` VALUES (18, '1', 'Book');
+INSERT INTO `answer` VALUES (19, '1', 'Searching for supersymmetry at LEP/LHC');
+INSERT INTO `answer` VALUES (20, '3', '3001 - 5000篇');
+INSERT INTO `answer` VALUES (20, '4', '5001篇以上');
+INSERT INTO `answer` VALUES (32, '4', '不到500篇');
+INSERT INTO `answer` VALUES (32, '1', '超過3,000篇');
+INSERT INTO `answer` VALUES (2, '2', '成功大學(含成大醫圖) ');
+INSERT INTO `answer` VALUES (1, '1', '高雄餐旅大學');
+INSERT INTO `answer` VALUES (4, '1', '中山大學學位論文系統 (eThesys)');
+INSERT INTO `answer` VALUES (3, '4', '25頁');
+INSERT INTO `answer` VALUES (5, '4', '利用中山大學館藏目錄查詢');
+INSERT INTO `answer` VALUES (6, '2', 'ISSN：0002-9602');
+INSERT INTO `answer` VALUES (6, '3', 'ISSN：0002-9246');
+INSERT INTO `answer` VALUES (44, '2', '顫慄100步');
+INSERT INTO `answer` VALUES (26, '3', '雲嘉南圖書聯盟');
+INSERT INTO `answer` VALUES (26, '4', '所列選項皆是');
+INSERT INTO `answer` VALUES (29, '1', '廁所內的衛生紙是免費的，所以就隨心所欲地無限量取用');
+INSERT INTO `answer` VALUES (10, '2', 'TDR: The Drama Review');
+INSERT INTO `answer` VALUES (41, '1', 'Differential antigen processing by dendritic cell subsets in vivo ');
+INSERT INTO `answer` VALUES (40, '1', '布林邏輯/字句');
+INSERT INTO `answer` VALUES (41, '4', 'Taking dendritic cells into medicine ');
+INSERT INTO `answer` VALUES (7, '4', 'Metropolitan Museum Journal');
+INSERT INTO `answer` VALUES (42, '4', '出自於現代語文該本期刊');
+INSERT INTO `answer` VALUES (38, '1', '1985');
+INSERT INTO `answer` VALUES (45, '3', '台灣新聞智慧網');
+INSERT INTO `answer` VALUES (45, '2', '慧科大中華新聞網');
+INSERT INTO `answer` VALUES (19, '4', 'Prospects for discovering supersymmetry at the LHC');
+INSERT INTO `answer` VALUES (72, '4', 'te');
+INSERT INTO `answer` VALUES (72, '1', 't');
+INSERT INTO `answer` VALUES (72, '3', 'te');
+INSERT INTO `answer` VALUES (72, '2', 't');
+INSERT INTO `answer` VALUES (48, '1', '1997');
+INSERT INTO `answer` VALUES (48, '2', '1998');
+INSERT INTO `answer` VALUES (49, '1', '復旦大學');
+INSERT INTO `answer` VALUES (49, '2', '南開大學');
+INSERT INTO `answer` VALUES (50, '1', '19');
+INSERT INTO `answer` VALUES (50, '2', '20');
+INSERT INTO `answer` VALUES (53, '4', '27');
+INSERT INTO `answer` VALUES (53, '3', '25');
+INSERT INTO `answer` VALUES (53, '2', '20');
+INSERT INTO `answer` VALUES (53, '1', '18');
+INSERT INTO `answer` VALUES (54, '4', '280');
+INSERT INTO `answer` VALUES (54, '3', '279');
+INSERT INTO `answer` VALUES (54, '2', '278');
+INSERT INTO `answer` VALUES (54, '1', '277');
+INSERT INTO `answer` VALUES (55, '2', 'SONY CORP');
+INSERT INTO `answer` VALUES (55, '3', 'CISCO SYSTEMS INC');
+INSERT INTO `answer` VALUES (56, '2', 'CA: A Cancer Journal for Clinicians | Impact Factor: 94.333 | 1/185 (Oncology)');
+INSERT INTO `answer` VALUES (56, '3', 'Child Development | Impact Factor: 3.77 | 1/50 (Psychology Educational) ');
+INSERT INTO `answer` VALUES (56, '4', 'Molecular Nutrition & Food Research | Impact Factor: 4.713 | 1/128 (Food Science & Technology) ');
+INSERT INTO `answer` VALUES (57, '4', 'Dr Mi-Hu Wang');
+INSERT INTO `answer` VALUES (57, '3', 'Dr Li-An Ho');
+INSERT INTO `answer` VALUES (58, '2', 'China Psychology Association 中國心理學會');
+INSERT INTO `answer` VALUES (58, '3', 'American Psychology Association 美國心理學會');
+INSERT INTO `answer` VALUES (58, '4', 'Australian Psychology Association 澳洲心理學會');
+INSERT INTO `answer` VALUES (59, '3', '阿爾夫文. 雨果 (Hugo Alfven)');
+INSERT INTO `answer` VALUES (59, '2', '貝多芬(Ludwig Von Beethoven)');
+INSERT INTO `answer` VALUES (59, '1', '彼得·伊利奇·柴科夫斯基(Tchaikovsky, Pyotr Il');
+INSERT INTO `answer` VALUES (60, '1', '小木偶');
+INSERT INTO `answer` VALUES (60, '2', '湯姆歷險記');
+INSERT INTO `answer` VALUES (60, '3', '愛麗絲夢遊仙境');
+INSERT INTO `answer` VALUES (60, '4', '頑童歷險記');
+INSERT INTO `answer` VALUES (61, '4', '實驗鼠學');
+INSERT INTO `answer` VALUES (61, '3', '藝術學科');
+INSERT INTO `answer` VALUES (61, '2', '社會科學');
+INSERT INTO `answer` VALUES (61, '1', '人文');
+INSERT INTO `answer` VALUES (62, '2', 'COMMUN MONOGR');
+INSERT INTO `answer` VALUES (62, '3', 'J COMPUT-MEDIAT COMM');
+INSERT INTO `answer` VALUES (12, '3', '12篇');
+INSERT INTO `answer` VALUES (18, '4', 'Reference Work');
+INSERT INTO `answer` VALUES (25, '1', '7樓');
+INSERT INTO `answer` VALUES (27, '1', 'HD108.15 P574 2001');
+INSERT INTO `answer` VALUES (29, '4', '所列選項皆否');
+INSERT INTO `answer` VALUES (22, '4', '影武者');
+INSERT INTO `answer` VALUES (24, '4', '台灣博碩士論文知識加值系統');
+INSERT INTO `answer` VALUES (44, '1', '陌生的孩子');
+INSERT INTO `answer` VALUES (62, '1', 'J COMMUN');
+INSERT INTO `answer` VALUES (9, '1', '3,001以上');
+INSERT INTO `answer` VALUES (17, '4', 'MOHANAN P ');
+INSERT INTO `answer` VALUES (23, '4', '10樓電子書坊');
+INSERT INTO `answer` VALUES (45, '4', '全部皆是');
+INSERT INTO `answer` VALUES (50, '3', '21');
+INSERT INTO `answer` VALUES (16, '3', '1990年');
+INSERT INTO `answer` VALUES (16, '4', '1992年');
+INSERT INTO `answer` VALUES (35, '3', '180~250種');
+INSERT INTO `answer` VALUES (35, '4', '超過250種');
+INSERT INTO `answer` VALUES (36, '3', '1978');
+INSERT INTO `answer` VALUES (36, '4', '1988');
+INSERT INTO `answer` VALUES (37, '4', '所列選項皆非');
+INSERT INTO `answer` VALUES (39, '1', '共可以找到五間公司');
+INSERT INTO `answer` VALUES (49, '3', '北京大學');
+INSERT INTO `answer` VALUES (49, '4', '中山大學');
+INSERT INTO `answer` VALUES (62, '4', 'PUBLIC OPIN QUART');
+INSERT INTO `answer` VALUES (59, '4', '路易吉﹒阿迪蒂 (Luigi Arditi)');
+INSERT INTO `answer` VALUES (12, '4', '1篇');
+INSERT INTO `answer` VALUES (13, '1', '2007');
+INSERT INTO `answer` VALUES (13, '2', '2008');
+INSERT INTO `answer` VALUES (57, '2', 'Dr Kowk Wai');
+INSERT INTO `answer` VALUES (57, '1', 'Dr Juni Chan');
+INSERT INTO `answer` VALUES (58, '1', 'British Psychology Association 英國心理學會');
+INSERT INTO `answer` VALUES (55, '4', 'SIEMENS AG(SIE)');
+INSERT INTO `answer` VALUES (50, '4', '22');
+INSERT INTO `answer` VALUES (10, '1', 'Modern Drama');
+INSERT INTO `answer` VALUES (44, '3', '34街的奇蹟');
+INSERT INTO `answer` VALUES (44, '4', '盲流感');
+INSERT INTO `answer` VALUES (6, '4', 'The American Journal of Economics and Sociology');
+INSERT INTO `answer` VALUES (27, '4', 'HD9.I42 N292');
+INSERT INTO `answer` VALUES (1, '4', '文藻外語學院');
+INSERT INTO `answer` VALUES (2, '1', '清華大學');
+
+-- --------------------------------------------------------
+
+-- 
+-- 資料表格式： `award`
+-- 
+
+CREATE TABLE `award` (
+  `year` int(5) NOT NULL,
+  `level` int(3) NOT NULL,
+  `score` int(3) NOT NULL,
+  `num` int(3) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=big5;
+
+-- 
+-- 列出以下資料庫的數據： `award`
+-- 
+
+INSERT INTO `award` VALUES (2011, 0, 0, 0);
+
+-- --------------------------------------------------------
+
+-- 
+-- 資料表格式： `awardlist`
+-- 
+
+CREATE TABLE `awardlist` (
+  `year` int(4) NOT NULL,
+  `user_id` varchar(20) NOT NULL,
+  `level` int(3) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=big5;
+
+-- 
+-- 列出以下資料庫的數據： `awardlist`
+-- 
+
+
+-- --------------------------------------------------------
+
+-- 
+-- 資料表格式： `college`
+-- 
+
+CREATE TABLE `college` (
+  `id` varchar(11) NOT NULL,
+  `name` varchar(20) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- 
+-- 列出以下資料庫的數據： `college`
+-- 
+
+INSERT INTO `college` VALUES ('1', '文學院');
+INSERT INTO `college` VALUES ('2', '理學院');
+INSERT INTO `college` VALUES ('3', '工學院');
+INSERT INTO `college` VALUES ('4', '管理學院');
+INSERT INTO `college` VALUES ('5', '海科院');
+INSERT INTO `college` VALUES ('6', '社科院');
+INSERT INTO `college` VALUES ('A', '教職員');
+INSERT INTO `college` VALUES ('K', '教職員');
+
+-- --------------------------------------------------------
+
+-- 
+-- 資料表格式： `depart`
+-- 
+
+CREATE TABLE `depart` (
+  `id` int(11) NOT NULL auto_increment,
+  `college_id` int(11) NOT NULL,
+  `name` varchar(30) NOT NULL,
+  PRIMARY KEY  (`id`),
+  KEY `college_id` (`college_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=40 DEFAULT CHARSET=utf8 AUTO_INCREMENT=40 ;
+
+-- 
+-- 列出以下資料庫的數據： `depart`
+-- 
+
+INSERT INTO `depart` VALUES (1, 1, '中國文學系');
+INSERT INTO `depart` VALUES (2, 1, '外國語文學系');
+INSERT INTO `depart` VALUES (3, 1, '音樂系');
+INSERT INTO `depart` VALUES (4, 1, '劇場藝術學系');
+INSERT INTO `depart` VALUES (5, 1, '哲學研究所');
+INSERT INTO `depart` VALUES (6, 2, '理學院大一不分系');
+INSERT INTO `depart` VALUES (7, 2, '化學系');
+INSERT INTO `depart` VALUES (8, 2, '物理系');
+INSERT INTO `depart` VALUES (9, 2, '生物科學系');
+INSERT INTO `depart` VALUES (10, 2, '應用數學系');
+INSERT INTO `depart` VALUES (11, 2, '生物醫學研究所');
+INSERT INTO `depart` VALUES (12, 3, '工學院大一不分系');
+INSERT INTO `depart` VALUES (13, 3, '電機工程學系');
+INSERT INTO `depart` VALUES (14, 3, '機械與機電工程學系');
+INSERT INTO `depart` VALUES (15, 3, '材料與光電科學學系');
+INSERT INTO `depart` VALUES (16, 3, '環境工程研究所');
+INSERT INTO `depart` VALUES (17, 3, '光電工程學系');
+INSERT INTO `depart` VALUES (18, 3, '通訊工程研究所');
+INSERT INTO `depart` VALUES (19, 4, '管院大一大二不分系');
+INSERT INTO `depart` VALUES (20, 4, '企業管理學系');
+INSERT INTO `depart` VALUES (21, 4, '資訊管理學系');
+INSERT INTO `depart` VALUES (22, 4, '財務管理學系');
+INSERT INTO `depart` VALUES (23, 4, '公共事務管理研究所');
+INSERT INTO `depart` VALUES (24, 4, '人力資源管理研究所');
+INSERT INTO `depart` VALUES (25, 4, '傳播管理研究所');
+INSERT INTO `depart` VALUES (26, 4, '醫務管理研究所');
+INSERT INTO `depart` VALUES (27, 5, '海洋生物科技暨資源學系');
+INSERT INTO `depart` VALUES (28, 5, '海洋環境及工程學系');
+INSERT INTO `depart` VALUES (29, 5, '海洋生物研究所');
+INSERT INTO `depart` VALUES (30, 5, '海洋地質及化學研究所');
+INSERT INTO `depart` VALUES (31, 5, '海下科技暨應用海洋物理研究所');
+INSERT INTO `depart` VALUES (32, 5, '海洋事務研究所');
+INSERT INTO `depart` VALUES (33, 6, '政治經濟學系');
+INSERT INTO `depart` VALUES (34, 6, '經濟學研究所');
+INSERT INTO `depart` VALUES (35, 6, '政治學研究所');
+INSERT INTO `depart` VALUES (36, 6, '教育研究所');
+INSERT INTO `depart` VALUES (37, 6, '社會學研究所');
+INSERT INTO `depart` VALUES (38, 6, '中國與亞太區域研究所');
+INSERT INTO `depart` VALUES (39, 3, '資訊工程學系');
+
+-- --------------------------------------------------------
+
+-- 
+-- 資料表格式： `ident`
+-- 
+
+CREATE TABLE `ident` (
+  `id` int(11) NOT NULL auto_increment,
+  `name` varchar(5) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+
+-- 
+-- 列出以下資料庫的數據： `ident`
+-- 
+
+INSERT INTO `ident` VALUES (1, '大學生');
+INSERT INTO `ident` VALUES (2, '碩士生');
+INSERT INTO `ident` VALUES (3, '博士生');
+INSERT INTO `ident` VALUES (4, '教師/教授');
+
+-- --------------------------------------------------------
+
+-- 
+-- 資料表格式： `problem`
+-- 
+
+CREATE TABLE `problem` (
+  `Id` int(4) NOT NULL auto_increment,
+  `cat` tinyint(1) NOT NULL,
+  `question` text NOT NULL,
+  `score` int(11) NOT NULL,
+  `visible` tinyint(1) NOT NULL default '0',
+  `is_multiple` tinyint(1) NOT NULL default '0',
+  `is_text` tinyint(1) NOT NULL default '0',
+  PRIMARY KEY  (`Id`)
+) ENGINE=MyISAM AUTO_INCREMENT=1 ;
+-- 
+-- 列出以下資料庫的數據： `problem`
+-- 
+
+INSERT INTO `problem` VALUES (30, 1, '<p>請用SDOL 資料庫，作答下述問題：在 Search 檢索介面中，檢索欄位除了可以選擇 All Field 所有欄位檢索外，還可以選擇自己想特定檢索的部分，如：Authors 作者等。請問「Affiliation」此檢索欄位是以哪個資訊做為搜尋依據？　</p>', 10, 0, 0);
+INSERT INTO `problem` VALUES (9, 1, '請問在《Naxos Music Library》音樂資料庫的『Keyword Search』輸入Beethoven 約有幾筆結果？', 10, 0, 0);
+INSERT INTO `problem` VALUES (5, 1, '欲查找DOI：10.1086/221735的文章可利用本校何種工具？', 10, 0, 0);
+INSERT INTO `problem` VALUES (7, 1, '請利用JSTOR資料庫回答下述問題：以下那一本期刊不為The Metropolitan Museum of Art所出版？', 10, 0, 0);
+INSERT INTO `problem` VALUES (8, 1, '<p>請問以下何者<font color="#0000FF"><b>不在</b></font>《Naxos Music Library》音樂資料庫中查詢欄位『音樂種類』的分類之中？</p>', 10, 0, 0);
+INSERT INTO `problem` VALUES (1, 1, '為整合高高屏區內24所大學圖書館之館藏資源，以互通有無，提升各校館藏利用價值，24校圖書館秉持資源共享之理念，相互對等互惠之原則，建立「圖書代借代還服務」，已積極推動圖書代借代還之館際合作，提升服務品質。請問下列哪一所學校不在圖書代借代還服務24校館際合作服務之列？', 10, 0, 0);
+INSERT INTO `problem` VALUES (2, 1, '為加速館際合作的時效性，本館與國內其他6所大學建立快速館際合作服務，申請件原則上在3個工作天內完成，複印件皆採Ariel傳送，借閱圖書以郵遞寄送。此項服務好處在於便利合作館師生節省時間與金錢，故在申請館際合作時，建議優先考慮這幾所學校。請問下面哪一所學校不在NDDS七校快速館際合作服務之列？', 10, 0, 0);
+INSERT INTO `problem` VALUES (3, 1, 'MyLibrary電子書平台，涵蓋超過2萬冊的電子書可供全校師生使用，請問其中的MyiLibrary電子書限制使用者一次下載頁數不得超過幾頁?', 10, 0, 0);
+INSERT INTO `problem` VALUES (45, 1, '欲取得中文電子報紙的資料，可利用下列哪個資料庫？', 10, 0, 0);
+INSERT INTO `problem` VALUES (4, 1, '欲取得美加地區之博士論文全文資料，可利用下列何者？', 10, 0, 0);
+INSERT INTO `problem` VALUES (39, 1, '請利用LexisNexis Academic資料庫中的企業>Create a Company List來限定檢索：<br>sales/Revenue的欄位限定在above 100,000,000,000以上，Employees限定from100,000人，SIC code為3679。</br>試問，下列敘述何者為是？', 10, 0, 0);
+INSERT INTO `problem` VALUES (38, 1, '彼得‧杜拉克（Peter F. Drucker）被尊為「管理學之父」，Emerald資料庫也有收錄2篇由他所寫的期刊（Journals）文章。請利用Advance Search功能，回答該2篇文章是於西元幾年所發表的？ (複選題)', 10, 0, 1);
+INSERT INTO `problem` VALUES (36, 1, '請問ProQuest Education Journals資料庫內的期刊『Harvard Educational Review』其所收錄的全文從何時開始？', 10, 0, 0);
+INSERT INTO `problem` VALUES (37, 1, '台灣經濟新報資料庫主要專長，下列何者為非？', 10, 0, 0);
+INSERT INTO `problem` VALUES (35, 1, '在Wiley Online Library電子資源平台裡，收錄有多少種與「Business & Management」學科領域相關的期刊？', 10, 0, 0);
+INSERT INTO `problem` VALUES (34, 1, '請利用《Web of Sicence(WOS)》資料庫回答下述問題：</br>請問「Novel sesquiterpenes and norergosterol from the soft corals Nephthea erecta and Nephthea chabroli」此篇收錄在SCI的期刊，其作者有幾位是中山大學的教職員生？', 10, 0, 0);
+INSERT INTO `problem` VALUES (32, 1, '請用《IEL/IEEE》資料庫，作答下述問題：</br><br />\n請搜尋在IEL資料庫裡，與"Cloud Computing"或"Network Coding"相關的IEEE 會議論文，年份在2008年至2011；研討會地點在上海(Shanghai)、北京(Beijing)、香港(Hong Kong)及台北(Taipei)，請問總共可以搜尋到幾篇文獻？', 10, 0, 0);
+INSERT INTO `problem` VALUES (33, 1, '在Environmental Science and Pollution Management資料庫中，請問下列哪是此資料庫所包含的學科範圍？ (複選題)', 10, 0, 1);
+INSERT INTO `problem` VALUES (28, 1, '請問在本校想要閱讀「空中英語教室」的課文，可以利用以下哪個資料庫？', 10, 0, 0);
+INSERT INTO `problem` VALUES (29, 1, '品德，是指品性道德。「好的品德，是自小培養而成的。」請問在圖書館中，下列何種行為可以稱得上是個有品的人？', 10, 0, 0);
+INSERT INTO `problem` VALUES (27, 1, '請問索書號為<font color="#0000FF"><b>HD57.7 A2746 2007</b></font>的這本書《Develop Your Leadership Skills》會排在下列哪一本書之後？', 10, 0, 0);
+INSERT INTO `problem` VALUES (25, 1, '若想查找關於<font color="#0000FF"><strong>學習如何使用Microsoft office文書處理軟體</strong></font>的書，應該到哪一層樓找', 10, 0, 0);
+INSERT INTO `problem` VALUES (26, 1, '請問當您想要找某篇期刊文章的全文，發現本校並沒有紙本期刊館藏，且資料庫上也沒有提供電子全文，此時您可以利用下列哪項服務取得全文', 10, 0, 0);
+INSERT INTO `problem` VALUES (23, 1, '在資料庫總覽中，連線範圍內標明「限圖書館PC單機使用」的資料庫，要到哪一層樓使用？', 10, 0, 0);
+INSERT INTO `problem` VALUES (24, 1, '請問若想要查尋某一本<font color="#0000FF"><b>圖書</b></font>在全國有哪幾間圖書館有，該利用下列哪個聯合目錄去查詢', 10, 0, 0);
+INSERT INTO `problem` VALUES (22, 1, '在圖書館四樓的多媒體視聽中心，為因應在廣大喜愛看電影的師生們，特此規劃獨立的電影專區，請問此電影專區中，排架在「<font color="#0000FF"><b>穿越時空愛上妳</b></font>」和「<font color="#0000FF"><b>前進高棉</b></font>」這兩部DVD中間是哪部電影？', 10, 0, 0);
+INSERT INTO `problem` VALUES (44, 1, '在圖書館四樓的多媒體視聽中心，為因應在廣大喜愛看電影的師生們，特此規劃獨立的電影專區，請問此電影專區中，排架在「<font color="#0000FF"><b>暮光之城:無懼的愛</b></font>」和「<font color="#0000FF"><b>華麗人生</b></font>」這兩部DVD中間是哪部電影？', 10, 0, 0);
+INSERT INTO `problem` VALUES (6, 1, 'DOI：10.1086/221735的文章被收錄在哪本期刊，其期刊資訊何者為對？(複選題)', 10, 0, 1);
+INSERT INTO `problem` VALUES (21, 1, '請問在期刊「Water, Air, & Soil Pollution」中所收錄的「Visibility Variation with Air Qualities in the Metropolitan Area in Southern Taiwan」此篇文章中，表2：annual visibility in Kaohsiung，是介紹高雄幾年之間的平均能見度？', 10, 0, 0);
+INSERT INTO `problem` VALUES (20, 1, '請搜尋在IEL資料庫裡，以"Robotics"作為主題詞相關的IEEE文獻，包括IEEE期刊雜誌、IEEE會議論文及IEEE技術標準，年份在2007 年至今，但排除 2008 年的資料；請問總共可以搜尋到幾篇文獻？', 10, 0, 0);
+INSERT INTO `problem` VALUES (31, 1, '請利用《SpringerLink》資料庫，作答下述問題：請問下列哪一類型出版品未包含在SpringerLink平台上？', 10, 0, 0);
+INSERT INTO `problem` VALUES (10, 1, 'Facebook是全球目前最熱門的社群網站之一，請利用Project Muse資料庫的Advance Search功能，找出2篇2008年題名(Article title)內包含「Facebook」的文章，並指出他們是各發表在下列哪兩本刊物中？', 10, 0, 1);
+INSERT INTO `problem` VALUES (11, 1, '請利用圖書館電子資源中之 Periodicals Archive Online，指出下列哪一份期刊不是此資料庫Humanities（General）主題中所收錄的期刊？', 10, 0, 0);
+INSERT INTO `problem` VALUES (12, 1, '近年來中國大陸的經濟發展速度是舉世矚目的，若談到中國經濟政策的發展推手，就不得不提及世界銀行首席經濟學家兼高級副行長-林毅夫 教授。林教授於重點經濟學期刊「The American Economic Review」上曾經發表了多篇影響近代經濟的期刊論文，試問透過EBSCOhost 的BSC資料庫完整地搜尋出林教授曾在此期刊中所發表的相關論文共計幾篇？', 10, 0, 0);
+INSERT INTO `problem` VALUES (13, 1, '有關Chen AL 與 Kao LF 所發表的文章: The benefit of excluding institutional investors from fixed-price IPOs - Evidence from Taiwan，請問文章發表後哪一年被引用的次數最多？', 10, 0, 0);
+INSERT INTO `problem` VALUES (14, 1, '利用Company Dossier 中的Create Company List 功能查找，將查找資訊限定在 Public – Parent 公司類型，Sales/ Revenue 限定在10,000,000,000 以上與100,000,000,000以下，員工數要100000以上，並且利用北美工業代碼(Search Primary NAICS Codes)，將查找範圍限定在33411 (Computer and Peripheral Equipment Manufacturing) 類別，請問下列哪一間公司無法被檢索出來？', 10, 0, 0);
+INSERT INTO `problem` VALUES (15, 1, 'AREMOS是進行社會科學研究的重要資料庫之一，內容包含台灣地區之國民所得、金融、貿易、工業生產、人口、就業、物價、薪資......等資料。以下為使用該資料庫的步驟，請問何者為非?', 10, 0, 0);
+INSERT INTO `problem` VALUES (16, 1, '請利用圖書館電子資源中之ProQuest Education Journals，查找期刊Review of Educational Research，請問該期刊在資料庫中，全文內容最早回溯至那一年？', 10, 0, 0);
+INSERT INTO `problem` VALUES (17, 1, '屬於中山大學所發表的文章中，有一篇文章：Printed double-T monopole antenna for 2.4/5.2 GHz dual-band WLAN operations，該篇作者為Kuo, YL。這篇文章有被其他文章引用，試問下列何者為引用該篇文章次數最多的引用者？', 10, 0, 0);
+INSERT INTO `problem` VALUES (18, 1, 'SDOL (ScienceDirect OnLine)資料庫中依字母順序瀏覽E開頭，名為「Early Human Development」的作品，請問它是屬於以下哪種類型文獻？', 10, 0, 0);
+INSERT INTO `problem` VALUES (19, 1, '「天使與魔鬼」電影當中有出現大型強子對撞器（Large Hadron Collider簡稱：LHC）的場景，也有內懸反物質的邪門容器的樣子。物理學家希望藉由加速器對撞機來幫助他們解答：粒子是否有相對應的「超對稱」（SUSY）粒子存在？而欲於SpringerLink中查找標題中包含LHC與超對稱作用(Supersymmetry)參考那些圖書文獻？(複選題)', 10, 0, 1);
+INSERT INTO `problem` VALUES (60, 1, '請利用Naxos Spoken Word Library資料庫，找出Mark Twain(馬克·吐溫)的任何兩個兒童文學作品(複選題)', 10, 1, 1);
+INSERT INTO `problem` VALUES (59, 1, '利用Naxos Music Library資料庫查出＜Violin Concerto in D major Op.35＞「D大調小提琴協奏曲，作品35」，是那位作曲家的作品？', 10, 1, 0);
+INSERT INTO `problem` VALUES (56, 1, 'Wiley Online Library電子資源平台提供的電子期刊中，以下哪一本的期刊排名，在2010年的JCR(Journal Citation Reports) 資料庫中為該學科類別的第一名？ (複選題)', 10, 1, 1);
+INSERT INTO `problem` VALUES (57, 1, '在Emerald每年出版的論文作者中有超過400人為台灣作者。 請問"Influence of online learning skills in cyberspace"文章的作者為?', 10, 1, 0);
+INSERT INTO `problem` VALUES (58, 1, 'PsycArticles資料庫收錄之期刊來自哪個學會所發行?', 10, 1, 0);
+INSERT INTO `problem` VALUES (55, 1, '利用LexisNexis Academic資料庫，Company Dossier 中的 Create Company List 功能查找，將Company Type限定在Public – Patent公司類型，Sales/ Revenue 限定在 100,000,000,000 以上，並且利用NAICS Code，將查找範圍限定在 33411 (Computer and Peripheral Equipment Manufacturing) 類別，請問下列哪一間公司可以被檢索出來?', 10, 1, 0);
+INSERT INTO `problem` VALUES (53, 1, '請搜尋 ASTM 現行標準 D1068-10，這篇標準參考了幾篇ASTM標準 ?', 10, 1, 0);
+INSERT INTO `problem` VALUES (54, 1, 'SpringerLink電子書資料庫中，2011年出版的「Wave Turbulence」一書，全書共有幾頁?', 10, 1, 0);
+INSERT INTO `problem` VALUES (50, 1, '在New York Times (紐約時報)當中，請找出於2011年9月份報導中的那一天？曾經於標題中談及YAHOO前途烏雲密布的文章消息', 10, 0, 0);
+INSERT INTO `problem` VALUES (49, 1, '在中國博士全文資料庫中，限定欄位為題名，輸入關鍵字為歐元區貨幣，請問在檢索結果中有一篇由周敏在2007年發表的文章，請問該篇文章的發表機構為?', 10, 0, 0);
+INSERT INTO `problem` VALUES (48, 1, '在Web of Science資料庫中，使用Address欄位輸入關鍵字: natl sun yat sen univ same taiwan，請問引用次數最高的文章是哪一年發表的?', 10, 0, 0);
+INSERT INTO `problem` VALUES (46, 1, '若想線上聆聽古典音樂曲目，可利用下列何者？', 10, 0, 0);
+INSERT INTO `problem` VALUES (42, 1, '請利用中國期刊網(CJFD)資料庫回答下述問題：利用兩關鍵字<張愛玲>與<蒼涼與啟示>，並且限定檢索欄位為主題來進行檢索，找到<蒼涼與啟示—談張愛玲小說創作思想的顯與隱>該篇文章，請問下列敘述何者為非？', 10, 0, 0);
+INSERT INTO `problem` VALUES (41, 1, '利用今年2010年諾貝爾生物醫學獎得主之一Steinman Ralph在Web of Science(WOS)中進行檢索，請問以此得獎者的名字進行檢索後，其被引用次數最高的文章為？', 10, 0, 0);
+INSERT INTO `problem` VALUES (40, 1, 'EBSCOhost資料庫中的哪一種【檢索模式】可以用文章找文章？', 10, 0, 0);
+INSERT INTO `problem` VALUES (61, 1, 'Project Muse所集合之期刊不包含那種學科為主？', 10, 1, 0);
+INSERT INTO `problem` VALUES (62, 1, '2010年JCR在傳播類別(Communication)中影響係數(Impact Factor)排名為第一的期刊是？', 10, 1, 0);
+
+-- --------------------------------------------------------
+
+-- 
+-- 資料表格式： `user`
+-- 
+
+CREATE TABLE `user` (
+  `year` varchar(4) NOT NULL,
+  `id` int(11) NOT NULL auto_increment,
+  `name` varchar(30) NOT NULL,
+  `sId` varchar(15) NOT NULL,
+  `ident_id` varchar(11) NOT NULL,
+  `depart_id` varchar(20) NOT NULL,
+  `depart` varchar(20) NOT NULL,
+  `email` varchar(300) NOT NULL,
+  `phone` varchar(30) NOT NULL,
+  `SelectedRecord` varchar(1000) NOT NULL default '[]',
+  `ipstamp` varchar(30) NOT NULL,
+  `starttime` timestamp NOT NULL default CURRENT_TIMESTAMP,
+  `endtime` datetime default NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=100536 DEFAULT CHARSET=utf8 AUTO_INCREMENT=100536 ;
+
+-- 
+-- 列出以下資料庫的數據： `user`
+-- 
+
+INSERT INTO `user` VALUES ('2011', 100535, 'test', '4', '4', 'A', '參考組', '11@hotmail.com', '666', '[qq]', '140.117.120.77', '2011-12-14 12:43:05', '0000-00-00 00:00:00');
+INSERT INTO `user` VALUES ('2011', 100534, '許妙鸞', 'M993040038', '2', '3', '資訊工程學系碩士班', 'miaw52777@gmail.com', '0932747492', '["q_1a_0"]', '140.117.169.186', '2011-12-14 12:39:36', '2011-12-14 12:39:44');
+INSERT INTO `user` VALUES ('2011', 100533, '康珮熏', 'A0950083', '4', 'K', '圖資處參考諮詢組', 'kpsh@staff.nsysu.edu.tw', '2452', '["q_1a_3","q_2a_1","q_3a_2","q_4a_0"]', '140.117.120.20', '2011-12-14 11:21:06', '2011-12-14 11:21:48');

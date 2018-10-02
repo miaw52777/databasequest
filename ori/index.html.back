@@ -1,0 +1,356 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>中山誰最庫!?</title>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<style type="text/css">
+<!--
+.style2 {font-size: 18px}
+.style20 {
+	font-size: 18px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	color: #930;
+	font-weight: bold;
+}
+.style21 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	color: #F30;
+}
+-->
+</style>
+</head>
+<body>
+<div id="header">
+	<div id="logo">
+		<h1>&nbsp;</h1>
+	  <p>&nbsp;</p>
+  </div>
+	<!-- end #logo -->
+  <!-- end #menu -->
+</div>
+<!-- end #header -->
+<div id="page">
+	<div id="content">
+	  <div class="post">
+	    <table width="100%" border="0">
+          <tr>
+            <td width="38%" height="98"><img src="images/answer.jpg" width="246" height="96" /></td>
+            <td width="20%">&nbsp;</td>
+            <td width="14%">&nbsp;</td>
+            <td width="14%">&nbsp;</td>
+            <td width="14%">&nbsp;</td>
+          </tr>
+        </table>
+	    <div class="entry">
+        <table width="100%" border="0">
+  <tr>
+    <td height="155" colspan="2"><img src="images/context.jpg" width="620" height="251" /></td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2"><img src="images/pre1.jpg" width="400" height="147" /></td>
+  </tr>
+  <tr>
+    <td colspan="2">得獎名單</td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td><table width="80%" border="0">
+      <tr>
+        <td width="69%" height="26">B992010018</td>
+        <td width="31%">吳懿紋</td>
+        </tr>
+      <tr>
+        <td>B974000003</td>
+        <td>游閔旭</td>
+        </tr>
+      <tr>
+        <td>B973021033</td>
+        <td>邱政斌</td>
+        </tr>
+    </table></td>
+    <td><table width="69%" border="0" align="left">
+      <tr>
+        <td>M991010002</td>
+        <td>洪培雅</td>
+        </tr>
+      <tr>
+        <td>B961020050</td>
+        <td>蘇穎欣</td>
+        </tr>
+      <tr>
+        <td>M995010006</td>
+        <td>黃淑慧</td>
+        </tr>
+    </table></td>
+    </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2"><img src="images/pre2.jpg" width="400" height="153" /></td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2">得獎名單</td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="0">
+      <tr>
+        <td width="13%">序號</td>
+        <td width="36%">學號</td>
+        <td width="51%">姓名</td>
+      </tr>
+      <tr>
+        <td>1.</td>
+        <td>M961010009</td>
+        <td>楊明</td>
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td>B971010007</td>
+        <td>林盈芳</td>
+      </tr>
+      <tr>
+        <td>3.</td>
+        <td>B973011044</td>
+        <td>李冠賢</td>
+      </tr>
+      <tr>
+        <td>4.</td>
+        <td>M971020002</td>
+        <td>吳彥祺</td>
+      </tr>
+      <tr>
+        <td>5.</td>
+        <td>M985010018</td>
+        <td>龔楚涵</td>
+      </tr>
+      <tr>
+        <td>6.</td>
+        <td>B962020012</td>
+        <td>逄澤樺</td>
+      </tr>
+      <tr>
+        <td>7.</td>
+        <td>B992020011</td>
+        <td>林玟君</td>
+      </tr>
+      <tr>
+        <td>8.</td>
+        <td>B971010051</td>
+        <td>葉惠娟</td>
+      </tr>
+      <tr>
+        <td>9.</td>
+        <td>B961020009</td>
+        <td>李文鑫</td>
+      </tr>
+      <tr>
+        <td>10.</td>
+        <td>M981010002</td>
+        <td>黃俊維</td>
+      </tr>
+      <tr>
+        <td>11.</td>
+        <td>B961010004</td>
+        <td>張詩苹</td>
+      </tr>
+      <tr>
+        <td>12.</td>
+        <td>B991020030</td>
+        <td>張鈞涵</td>
+      </tr>
+      <tr>
+        <td>13.</td>
+        <td>B971060042</td>
+        <td>黃邦庭</td>
+      </tr>
+      <tr>
+        <td>14.</td>
+        <td>M995040002</td>
+        <td>田楷寅</td>
+      </tr>
+      <tr>
+        <td>15.</td>
+        <td>M995020011</td>
+        <td>黃智鈴</td>
+      </tr>
+      <tr>
+        <td>16.</td>
+        <td>M981010009</td>
+        <td>吳美儀</td>
+      </tr>
+      <tr>
+        <td>17.</td>
+        <td>B971020005</td>
+        <td>吳依珊</td>
+      </tr>
+      <tr>
+        <td>18.</td>
+        <td>B974000074</td>
+        <td>楊斐涵</td>
+      </tr>
+      <tr>
+        <td>19.</td>
+        <td>M961020012</td>
+        <td>陳珀愉</td>
+      </tr>
+      <tr>
+        <td>20.</td>
+        <td>B964000126</td>
+        <td>李依筠</td>
+      </tr>
+      <tr>
+        <td>21.</td>
+        <td>B992040011</td>
+        <td>林培鈜</td>
+      </tr>
+    </table></td>
+    <td><table width="100%" border="0">
+      <tr>
+        <td width="15%">序號</td>
+        <td width="44%">學號</td>
+        <td width="41%">姓名</td>
+      </tr>
+      <tr>
+        <td>22.</td>
+        <td>B962010037</td>
+        <td>許玉珊</td>
+      </tr>
+      <tr>
+        <td>23.</td>
+        <td>M993010059</td>
+        <td>廖泳棠</td>
+      </tr>
+      <tr>
+        <td>24.</td>
+        <td>B962010011</td>
+        <td>劉黃翔</td>
+      </tr>
+      <tr>
+        <td>25.</td>
+        <td>B974020036</td>
+        <td>柯婉婷</td>
+      </tr>
+      <tr>
+        <td>26.</td>
+        <td>B984020026</td>
+        <td>侯承志</td>
+      </tr>
+      <tr>
+        <td>27.</td>
+        <td>B984000041</td>
+        <td>林筱涵</td>
+      </tr>
+      <tr>
+        <td>28.</td>
+        <td>B973090018</td>
+        <td>黃士恒</td>
+      </tr>
+      <tr>
+        <td>29.</td>
+        <td>M985010019</td>
+        <td>翁意婷</td>
+      </tr>
+      <tr>
+        <td>30.</td>
+        <td>M982040023</td>
+        <td>黃俊華</td>
+      </tr>
+      <tr>
+        <td>31.</td>
+        <td>D955040004</td>
+        <td>江俊翰</td>
+      </tr>
+      <tr>
+        <td>32.</td>
+        <td>B993040028</td>
+        <td>陳維婷</td>
+      </tr>
+      <tr>
+        <td>33.</td>
+        <td>M993010007</td>
+        <td>陳敏睿</td>
+      </tr>
+      <tr>
+        <td>34.</td>
+        <td>B993021048</td>
+        <td>王天弘</td>
+      </tr>
+      <tr>
+        <td>35.</td>
+        <td>B991010016</td>
+        <td>張筱淇</td>
+      </tr>
+      <tr>
+        <td>36.</td>
+        <td>B991020008</td>
+        <td>黃立仁</td>
+      </tr>
+      <tr>
+        <td>37.</td>
+        <td>B972040016</td>
+        <td>林政衛</td>
+      </tr>
+      <tr>
+        <td>38.</td>
+        <td>B983022054</td>
+        <td>黃義臣</td>
+      </tr>
+      <tr>
+        <td>39.</td>
+        <td>B971020046</td>
+        <td>胡偉銘</td>
+      </tr>
+      <tr>
+        <td>40.</td>
+        <td>B963011004</td>
+        <td>黃信惟</td>
+      </tr>
+      <tr>
+        <td>41.</td>
+        <td>M985010004</td>
+        <td>謝淑秋</td>
+      </tr>
+      <tr>
+        <td>42.</td>
+        <td>B972020016</td>
+        <td>嚴彗嫣</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+</table>
+
+	      <table width="100%" border="0">
+            <tr>
+              <td width="98%">&nbsp;</td>
+            </tr>
+          </table>
+	    </div>
+  </div>
+  </div>
+<!-- end #content -->
+	<!-- end #sidebar -->
+  <div style="clear: both;">&nbsp;</div>
+</div>
+<!-- end #page -->
+<div id="footer">
+	<p>&nbsp;</p>
+</div>
+<!-- end #footer -->
+</body>
+</html>

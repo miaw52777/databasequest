@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Notes</title>
+</head>
+
+<body>
+<table width="800" border="1" align="center" cellpadding="7" cellspacing="0">
+  <tr>
+    <td colspan="3" align="center" valign="middle" bgcolor="#8AB9EC"><strong>工作進度表</strong></td>
+  </tr>
+  <tr>
+    <td width="30" align="center" valign="middle" bgcolor="#CEE8F0"><strong>序</strong></td>
+    <td width="600" align="center" valign="middle" bgcolor="#CEE8F0"><strong>工作項目</strong></td>
+    <td align="center" valign="middle" bgcolor="#CEE8F0"><strong>日期</strong></td>
+  </tr>
+  <tr>
+    <td width="30" align="center" valign="middle">1</td>
+    <td width="600">第一頁輸入個人資訊已完成
+    第二頁問卷調查部分，已經寫了 if 判斷來看是哪個學院的學生
+    不同學院的學生要用不同的query (sQuery)
+    綜合的題目是從1~5 </td>
+    <td>2009/10/19 (一)</td>
+  </tr>
+  <tr>
+    <td width="30" align="center" valign="middle">2</td>
+    <td width="600">Question.php random題目和答案</td>
+    <td>2009/10/26 (一)</td>
+  </tr>
+  <tr>
+    <td width="30" align="center" valign="middle">3</td>
+    <td width="600">
+    	<li>暫存功能寫到 saveQuest.php (未完成) ，他用來 update或insert資料</li>
+        <li>selectQuest.php 是當使用者登入以後要產生新的questionnaire(question.php)還是繼續填答之前的問卷(prevQuest.php)</li>    </td>
+    <td>2009/11/07 (六)</td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle">4</td>
+    <td>成功把random順序存起來，使用者登入時可判斷是否之前有save過，或是新登入的使用者。剩下：savedForm.php, saveQuest.php, submitForm.php 之後要顯示解答</td>
+    <td>2009/11/09(一)</td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle">5</td>
+    <td>發現潛在的問題，當使用者未按暫存或繳交之前，他的使用狀態是不會被記錄的(因為基本資料是存在分散的不同表，所以很麻煩)，因此他可以看到題目然後先找答案</td>
+    <td>2009/11/23(一)</td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle">6</td>
+    <td>Submit的時候有時候會出現 no database selected, can't insert into table</td>
+    <td>2009/11/28(六)</td>
+  </tr>
+</table>
+</body>
+</html>

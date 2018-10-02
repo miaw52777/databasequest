@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>中山誰最庫!?</title>
+<style type="text/css">
+<!--
+body {
+	font: 100% 細明體, 新細明體;
+	margin: 0; /* 比較好的做法是將 Body 元素的邊界與欄位間隔調整為零，以處理不同的瀏覽器預設值 */
+	padding: 0;
+	text-align: center; /* 這樣會讓容器在 IE 5* 瀏覽器內置中對齊。然後，文字會在 #container 選取器中設定為靠左對齊預設值 */
+	color: #000000;
+	background-color: #666;
+}
+.oneColFixCtr #container {
+	width: 900px;
+	margin: 0 auto; /* 自動邊界 (搭配寬度) 會讓頁面置中對齊 */
+	border: 1px solid #000000;
+	text-align: left; /* 這樣做會覆寫 Body 元素上的 text-align: center。 */
+	margin-top: 100px;
+	height: 422px;
+	background-color: #191919;
+}
+.oneColFixCtr #mainContent {
+	padding: 0 20px; /* 請記住，欄位間隔就是 Div 方塊內部的空間，而邊界就是 Div 方塊外部的空間 */
+}
+-->
+</style>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19345497-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body class="oneColFixCtr">
+
+<div id="container"><img src="01_02.gif" width="1" height="1" /><img src="images/01_01.gif" width="900" height="268" /><img src="images/01_02.gif" width="1" height="1" /><img src="images/01_03.gif" width="216" height="154" /><a href="01.html" ><img src="images/01_04.gif" width="154" height="154" border="0"/></a><a href="02.html"><img src="images/01_05.gif" width="185" height="154" border="0"/></a><a href="quest/"><img src="images/01_06.gif" width="154" height="154" border="0"/></a><img src="images/01_07.gif" width="190" height="154" /></div>
+</body>
+</html>
